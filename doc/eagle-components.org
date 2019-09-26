@@ -1,0 +1,58 @@
+# -*- mode: org -*-
+#+TITLE: LISTA DE COMPONENTES EAGLE
+#+AUTHOR: Pedro Maione
+#+EMAIL: pedromaione@protonmail.com
+
+#+OPTIONS:   H:4 num:nil toc:2 p:t
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="home/maione/documentos/org-notes/css/readtheorg/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/home/maione/documentos/org-notes/css/readtheorg/readtheorg.css"/>
+
+
+* Through Hole
+
+
+| Nome                           | Library              | Dispositivo          | Package              | Obs.                                     |
+| <l30>                          | <c20>                | <c20>                | <c20>                | <l40>                                    |
+|--------------------------------+----------------------+----------------------+----------------------+------------------------------------------|
+| Barra de pino macho            | con-lsta             |                      |                      |                                          |
+|                                |                      |                      |                      |                                          |
+| Capacitor Ceramico 50V 2,54mm  | rcl / C-EU           | C-EU025-025x050      | C025-025X050         |                                          |
+| Capacitor Ceramico 50V 5,08mm  | rcl / C-EU           | C-EU050-030x075      | C050-030X075         |                                          |
+|                                |                      |                      |                      |                                          |
+| Capacitor Eletrolítico < 10uF / 50V | rcl / CPOL-EU        | CPOL-EUE2.5-6        | E2,5-6               |                                          |
+| Capacitor Eletrolítico 220uF   | rcl / CPOL-EU        | CPOL-EUE5-10.5       | E5-10,5              |                                          |
+|                                |                      |                      |                      |                                          |
+| Crystal                        | Crystal > Crystal    | CRYSTALHC49U70       | HC49U70              | Perfil alto                              |
+| Crystal                        | Crystal > Crystal    | CRYSTALHC49S         | HC49/S               | Perfil baixo                             |
+|                                |                      |                      |                      |                                          |
+| Crystal (RTC)                  | Crystal > Crystal    | CRYSTALTC26H         | TC26H                | Cristal 32.768Khz                        |
+|                                |                      |                      |                      |                                          |
+| Resistors 1/4W – tight fit     | rcl > R-EU_          | R-EU_0207/7          | 0207/7               |                                          |
+| Resistors 1/4W – normal fit    | rcl > R-EU_          | R-EU_0207/10         | 0207/10              |                                          |
+|                                |                      |                      |                      |                                          |
+| Trimpot – 3296 (Vertical)      | rcl > R-TRIMM        | R-TRIMM64W           | RTRIM64W             |                                          |
+|                                |                      |                      |                      |                                          |
+| LEDs 3mm                       | led > LED            | LED3MM               | LED3MM               |                                          |
+| LEDs 5mm                       | led > LED            | LED5MM               | LED5MM               |                                          |
+|                                |                      |                      |                      |                                          |
+| Jumper – single                | jumper               | JP1E                 |                      |                                          |
+| Jumper – double                | jumper               | JP2Q                 |                      |                                          |
+|                                |                      |                      |                      |                                          |
+| PBT Connectors – 2Pin          | con-ptr500+          | AK500/2              | AK500/2              |                                          |
+|                                |                      |                      |                      |                                          |
+| Piezo buzzer                   | buzzer               | F/CM12P              | F/CM12P              |                                          |
+|                                |                      |                      |                      |                                          |
+| Microswitch – 4 Lead           | switch-omron         | 10-XX                | B3F-10XX             |                                          |
+|                                |                      |                      |                      |                                          |
+| Mini slide switch              | switch               | 255SB                | 255SB                |                                          |
+|                                |                      |                      |                      |                                          |
+| D type 9 pin Serial connector, PCB Mountable | con-subd > F09       | F09H                 | F09H                 |                                          |
+|                                |                      |                      |                      |                                          |
+|                                |                      |                      |                      |                                          |
+|                                |                      |                      |                      |                                          |
+|                                |                      |                      |                      |                                          |
+|                                |                      |                      |                      |                                          |
+|                                |                      |                      |                      |                                          |
+|                                |                      |                      |                      |                                          |
+|                                |                      |                      |                      |                                          |

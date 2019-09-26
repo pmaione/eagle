@@ -1,0 +1,63 @@
+
+#+TITLE: Lista de Tarefas - Eagle PCB
+#+DATE: <2016-09-08 Qui>
+#+AUTHOR: Pedro Maione
+#+EMAIL: pedromaione@protonmail.com
+
+#+OPTIONS:   H:4 num:nil toc:2 p:t
+
+#+KEYWORDS: eagle pcb, org, todo list, reference
+#+LANGUAGE: en
+
+#+STARTUP: contents
+
+#+SETUPFILE: /home/maione/documentos/design/css/org-html.setup
+
+#+PROPERTY:  header-args :eval yes :exports both :results replace
+
+
+
+#+MACRO: myeagledir /home/maione/documentos/eletronica/eagle
+
+* Organização de arquivos
+
+  Diretório arquivos /custom/: ~/home/maione/documentos/eletronica/eagle~
+
+  Arvore de diretórios:
+  
+  - ~scr~ :: Arquivos de /script/
+  - ~lbr~ :: Biblioteca de Dispositivos (/Devices/)
+  - ~cam~ :: Arquivos para CAM
+	     Gerar arquivos GERBER e EXCELLON.
+  - ~doc~ :: Documentação
+
+* Configurações iniciais
+	  
+  Alterar os diretórios padrão do programa, no menu ir em =Options>Directories=, e alterar os campos conforme abaixo:
+
+  - *Documentation:* {{{myeagledir}}}/doc:$EAGLEDIR/doc
+  - *Libraries:* {{{myeagledir}}}/lbr:$EAGLEDIR/lbr
+  - *Design Rules:* {{{myeagledir}}}/dru
+  - *User Language Programs:* {{{myeagledir}}}/ulp:$EAGLEDIR/ulp
+  - *Scripts:* {{{myeagledir}}}/scr
+  - *CAM Jobs:* {{{myeagledir}}}/cam
+  - *Projects:* {{{myeagledir}}}/prj:$EAGLEDIR/projects/examples
+
+
+* Padrão da biblioteca
+  
+** PADS
+
+  |-----------+----------------------|
+  | Parametro | Valor                |
+  |-----------+----------------------|
+  | Drill     | 32 mil   (0.79 mm)   |
+  | Diameter  | 56 mil   (1,4224 mm) |
+  | Shape     | Octagon              |
+  |-----------+----------------------|
+
+
+
+* Lista Tarefas
+
+** Bibliotecas (lbr)

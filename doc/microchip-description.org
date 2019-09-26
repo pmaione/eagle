@@ -1,0 +1,67 @@
+
+
+
+
+
+* PIC16F87XA
+
+** Descrição
+
+   + Devices Included in this Data Sheet:
+     - PIC16F873A
+     - PIC16F874A
+     - PIC16F876A
+     - PIC16F877A
+
+   + Analog Features:
+     - 10-bit, up to 8-channel Analog-to-Digital Converter (A/D)
+     - Brown-out Reset (BOR)
+     - Analog Comparator module with:
+     - Two analog comparators
+     - Programmable on-chip voltage reference (VREF) module
+     - Programmable input multiplexing from device inputs and internal voltage reference
+     - Comparator outputs are externally accessible
+
+   + High-Performance RISC CPU:
+     - Only 35 single-word instructions to learn
+     - All single-cycle instructions except for program branches, which are two-cycle
+     - Operating speed: 
+       - DC – 20 MHz clock input
+       - DC – 200 ns instruction cycle
+     - Up to 8K x 14 words of Flash Program Memory, Up to 368 x 8 bytes of Data Memory (RAM), Up to 256 x 8 bytes of EEPROM Data Memory
+     - Pinout compatible to other 28-pin or 40/44-pin PIC16CXXX and PIC16FXXX microcontrollers
+
+   + Special Microcontroller Features:
+     - 100,000 erase/write cycle Enhanced Flash program memory typical
+     - 1,000,000 erase/write cycle Data EEPROM memory typical
+     - Data EEPROM Retention > 40 years
+     - Self-reprogrammable under software control
+     - In-Circuit Serial ProgrammingTM (ICSP) via two pins
+     - Single-supply 5V In-Circuit Serial Programming
+     - Watchdog Timer (WDT) with its own on-chip RC oscillator for reliable operation
+     - Programmable code protection
+     - Power saving Sleep mode
+     - Selectable oscillator options
+     - In-Circuit Debug (ICD) via two pins
+
+   + Peripheral Features:
+     - Timer0: 8-bit timer/counter with 8-bit prescaler
+     - Timer1: 16-bit timer/counter with prescaler, can be incremented during Sleep via external crystal/clock
+     - Timer2: 8-bit timer/counter with 8-bit period register, prescaler and postscaler
+     - Two Capture, Compare, PWM modules
+     - Capture is 16-bit, max. resolution is 12.5 ns
+     - Compare is 16-bit, max. resolution is 200 ns
+     - PWM max. resolution is 10-bit
+     - Synchronous Serial Port (SSP) with SPI (Master mode) and I 2 CTM (Master/Slave)
+     - Universal Synchronous Asynchronous Receiver Transmitter (USART/SCI) with 9-bit address detection
+     - Parallel Slave Port (PSP) – 8 bits wide with external RD, WR and CS controls (40/44-pin only)
+     - Brown-out detection circuitry for Brown-out Reset (BOR)
+
+   + CMOS Technology:
+     - Low-power, high-speed Flash/EEPROM technology
+     - Fully static design
+     - Wide operating voltage range (2.0V to 5.5V)
+     - Commercial and Industrial temperature ranges
+     - Low-power consumption
+
+* PIC 16F876A

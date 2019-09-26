@@ -1,0 +1,2 @@
+# Exporta imagem 
+RUN export-brd-image monochrome 300 .tif 16 17 18 20;

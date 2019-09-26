@@ -1,0 +1,156 @@
+# <b>Script de configuração do EAGLE</b> <p>
+# Este arquivo altera as configuraçoes padroes ao inicializar o Eagle
+
+Assign F2 'window;'
+
+# Zoom
+Assign SF4 'window fit;'
+
+# GRIDs
+Assign F5 'Grid dots';
+Assign F6 'Grid lines';
+Assign F7 'Grid mm';
+Assign F8 'Grid inch';
+
+Assign F9 'Grid inch 0.1 on; Grid alt inch 0.05;';
+Assign F10 'Grid inch 0.01 on; Grid alt inch 0.025;';
+Assign F11 'Grid inch 0.05 on; Grid alt inch 0.01;';
+Assign F12 'Grid mm 1 on; Grid alt mm 0.1;';
+
+# 
+Assign F3 'Name';
+Assign F4 'Value';
+
+
+#
+Assign C+C 'Copy';
+Assign C+V 'Paste';
+#
+Assign C+M 'Move';
+Assign A+M 'Miter';
+Assign A+W 'Copy';
+Assign C+A 'Add';
+Assign CS+A 'Replace';
+Assign C+G 'Group';
+Assign C+D 'Delete';
+Assign C+W 'Wire';
+Assign C+T 'Text';
+Assign C+N 'Name';
+Assign CS+S 'Smash';
+Assign C+Y 'Paste';
+
+# Configuraçoes para a janela de Layout
+BRD:
+#Menu Add Change Copy Delete Display Grid Group Move \
+#Name Quit Rect Route Script Show Signal Split \
+#Text Value Via Window ';' Wire Write Edit;
+
+Set Pad_names on;
+Set Width_menu 0.008 0.01 0.012 0.014 0.016 0.02 0.024 0.03 0.035 0.04;
+Set Drill_menu 0.032 0.048;
+Set Size_menu 0.04 0.05 0.06 0.07 0.08 0.10;
+#Set Used_layers 1 16 17 18 19 20 21 22 23 24 25 26 \
+#27 28 39 40 41 42 43 44 45 47 48 49;
+
+Grid inch 0.05 on;
+Grid alt inch 0.025;
+Grid lines;
+
+# Furo de vias e pads
+Change Drill 0.032;
+# Diametro de vias e pads
+Change Diameter 0.056;
+# Formato da via: octagonos
+Change Shape octagon;
+
+# Largura da trilha padrao
+Change Width 0.012; 
+
+# Altera os padroes de fonte
+Change Font Vector;
+Change Ratio 15;
+Change Size 0.07;
+
+# Executa o script que define as cores padrao
+scr default-colors-brd.scr
+
+# Mostra apenas as layers principais
+#display none; 
+#display 1 16 17 18 19 20 21 22 23 24 45 49 50 51; 
+
+#Assing shortcuts
+Assign A+S 'split;';
+Assign A+R 'ratsnest;';
+Assign CS+D 'drc;';
+
+Assign C+R 'Route';
+Assign CS+R 'Ripup';
+
+Assign F6 'show';
+Assign F7 'info';
+
+#
+#
+#
+#
+SCH:
+
+Assign A+N 'Net';
+
+Grid inch 0.1 on;
+Grid alt inch 0.05;
+Grid dots;
+Grid on;
+
+Change Width 0.006;
+
+Change Font Vector;
+
+LBR:
+Grid inch 0.1 on;
+Grid alt inch 0.01;
+Grid lines;
+Grid on;
+
+DEV:
+Grid inch 0.1 on;
+Grid alt inch 0.01;
+Grid lines;
+Grid on;
+
+SYM:
+
+Grid inch 0.1 on;
+Grid alt inch 0.05;
+Grid dots;
+Grid on;
+
+Change Width 0.010;
+
+PAC:
+
+Grid inch 0.05;
+Grid alt inch 0.01;
+Grid Lines;
+Grid On;
+
+# Executa o script que define as cores padrao
+scr default-colors-brd.scr
+
+Change Width 0.005;
+Change Size 0.040;
+
+Change Font Vector;
+Change Ratio 12;
+
+Change align center;
+
+# Furo de vias e pads
+Change Drill 0.032;
+# Diametro de vias e pads
+Change Diameter 0.056;
+# Formato da via: octagonos
+Change Shape octagon;
+
+# Mostra as layers principais
+#display all; 

@@ -1,0 +1,31 @@
+Ten Rules for Components Placement on PCB Design
+Terms of using this article 
+This article is primarily for internal use in Quick‐teck. Now we decided to open it up publicly. 
+We try to ensure the information in this are as accurate as possible, but please be aware we 
+don’t take any reasonability for anything that results from this article. You’re using this at 
+your own risk.  
+Details 
+1. Start placement of big/main/critical components( this could be MCU,DSP,FPGA,DDR, 
+clock devices) and then place support component like resistors, capacitors around 
+them.  
+2. Use 50 or 100mil as component grid to place these big components ( QFP, BGA, SOP, 
+SOIC, or through hole connectors). Use 25mil as component gird for these SMT 
+resistors/capacitors or other small passive components. 
+3. Isolate the analog, digital and power supply section. 
+4. Clock driver/synchronizer should be located close to clock oscillator. 
+5. Arrange components in rows and columns, and oriented uniformly for ease of 
+installation, inspection and rework. When possible, all polarized components such as 
+tantrum capacitor and diodes in the same direction. Polarity of these components 
+should be indicated on the silkscreen. 
+6. Keep at least 40mil space between components and 100mil space from component 
+to board edge. Locate connectors on one edge or one corner of the board. 
+7. Try to place all components on the top side only. If not possible, only these low‐
+profile, small size and low thermal dissipation component (like SMD passive parts) 
+can be on bottom side.  
+8. Place decoupling capacitors close as much as possible to VCC pin on active 
+components.  
+9. Keep at least 200mil clearance from transformer to electrolytic capacitor. 
+10. Locate indication LEDs, test points, switches, jumpers and adjustable components 
+for easy access.  
+One more rule,  it’s always good to double check analog, high frequency, RF, high voltage, 
+high profile, heavy or high heat components before starting trace routing.

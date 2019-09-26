@@ -1,0 +1,57 @@
+#+TITLE: Referência do EAGLE PCB Designer
+#+AUTHOR: Pedro Maione
+#+EMAIL: pedromaione@protonmail.com
+
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+
+#+CREATOR: Emacs 24.4.1 (Org mode 8.2.10)
+
+#+DESCRIPTION:
+
+#+EXCLUDE_TAGS: noexport
+
+#+KEYWORDS:
+
+#+LANGUAGE: pt-br
+
+#+SELECT_TAGS: export
+
+
+#+STARTUP: showall
+
+#+SETUPFILE: /home/maione/documentos/design/css/org-html.setup
+
+* Manual
+** Grid
+   *Schematics* should always be drawn on a grid of 0.1 inches (2,54 mm)
+   since the libraries are defined this way.
+
+** Tabela Layers
+
+** Tabela Unidades
+|----------------------+-------------------------------+-------------------|
+| <c>                  | <c>                           | <c>               |
+| polegadas (/inches/) | milésimos de polegada (/mil/) | milimetros (/mm/) |
+|----------------------+-------------------------------+-------------------|
+| 0,008                | 8                             | 0,2032            |
+| 0,009                |                               |                   |
+| 0,010                | 10                            | 0,2540            |
+| 0,011                |                               |                   |
+| 0,012                | 12                            | 0,3048            |
+| 0,016                | 16                            | 0,04064           |
+| 0,024                | 24                            | 0,06096           |
+| 0,032                | 32                            | 0,8128            |
+| 0,040                | 40                            | 1,0160            |
+| 0,050                | 50                            | 1,2700            |
+| 0,100                | 100                           | 2,5400            |
+|----------------------+-------------------------------+-------------------|
+
+
+
+* Padronização
+
+  Tamanho de furo minimo: 32mil ~ 0.8128mm
+  Tamanho de diametro do pad/via minimo: 66mil
