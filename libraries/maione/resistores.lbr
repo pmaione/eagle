@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -210,6 +210,27 @@ Piher</description>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 </package>
+<package name="TRIMPOT_10MM_HOR">
+<description>&lt;b&gt;POTENTIOMETER&lt;/b&gt;&lt;p&gt;
+Piher</description>
+<wire x1="0.889" y1="0.127" x2="-0.127" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="-0.127" y1="-0.889" x2="-0.508" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="-0.508" x2="-0.508" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="-1.27" x2="-1.397" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="1.397" y1="-0.381" x2="0.381" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="-1.397" x2="0.762" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="-1.778" x2="0" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.778" x2="-0.889" y2="-2.667" width="0.1524" layer="21"/>
+<circle x="0" y="-1.27" radius="1.8034" width="0.1524" layer="21"/>
+<circle x="0" y="-1.27" radius="2.794" width="0.1524" layer="21"/>
+<circle x="0" y="-1.27" radius="3.81" width="0.1524" layer="51"/>
+<pad name="1" x="-2.54" y="-6.35" drill="1.5" diameter="3"/>
+<pad name="2" x="0" y="3.81" drill="1.5" diameter="3"/>
+<pad name="3" x="2.54" y="-6.35" drill="1.5" diameter="3"/>
+<text x="0" y="6.35" size="1.016" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-8.89" size="1.016" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<circle x="0" y="-1.27" radius="5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RES">
@@ -289,6 +310,16 @@ Piher</description>
 </gates>
 <devices>
 <device name="/TRIM-H-LI15" package="LI15">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="TRIMPOT_10MM_HOR">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -249,6 +249,30 @@
 <vertex x="2.286" y="6.858"/>
 </polygon>
 </package>
+<package name="CP2102-HEADER-UP">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="1.27" y1="6.35" x2="1.27" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.35" x2="-1.27" y2="6.35" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-6.35" x2="-1.27" y2="6.35" width="0.1524" layer="21"/>
+<text x="0" y="6.985" size="1.016" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<pad name="1" x="0" y="5.08" drill="0.8128" diameter="1.6764" shape="octagon" first="yes"/>
+<pad name="2" x="0" y="2.54" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="0" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="4" x="0" y="-2.54" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="5" x="0" y="-5.08" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<wire x1="1.27" y1="-6.35" x2="-1.27" y2="-6.35" width="0.1524" layer="21"/>
+<text x="-1.27" y="5.08" size="1.016" layer="51" font="vector" ratio="12" rot="R180" align="center-left">3V3</text>
+<text x="-1.27" y="0" size="1.016" layer="51" font="vector" ratio="12" rot="R180" align="center-left">RXD</text>
+<text x="-1.27" y="2.54" size="1.016" layer="51" font="vector" ratio="12" rot="R180" align="center-left">TXD</text>
+<text x="-1.27" y="-5.08" size="1.016" layer="51" font="vector" ratio="12" rot="R180" align="center-left">5V</text>
+<text x="-1.27" y="-2.54" size="1.016" layer="51" font="vector" ratio="12" rot="R180" align="center-left">GND</text>
+<polygon width="0.127" layer="21">
+<vertex x="1.778" y="5.08"/>
+<vertex x="2.286" y="4.572"/>
+<vertex x="2.286" y="5.588"/>
+</polygon>
+<text x="2.54" y="-1.27" size="1.016" layer="25" font="vector" ratio="10" rot="R90" align="center">CP2102</text>
+</package>
 </packages>
 <symbols>
 <symbol name="POWER-JACK-DC">
@@ -303,6 +327,23 @@
 <pin name="CTS" x="-2.54" y="-10.16" visible="pin" length="short" direction="pas" swaplevel="1"/>
 <pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short" direction="pas" swaplevel="1"/>
 </symbol>
+<symbol name="CP2102-HEADER">
+<text x="0" y="2.54" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
+<pin name="RXD" x="-2.54" y="-5.08" visible="pin" length="short" direction="pas" swaplevel="1"/>
+<pin name="3V3" x="-2.54" y="0" visible="pin" length="short" direction="pas" swaplevel="1"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="-10.922" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-10.922" x2="2.032" y2="-10.922" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-10.922" x2="2.032" y2="0.762" width="0.254" layer="94"/>
+<wire x1="2.032" y1="0.762" x2="-0.762" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="0" y1="-7.62" x2="1.27" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="0" y1="-10.16" x2="1.27" y2="-10.16" width="0.6096" layer="94"/>
+<pin name="TXD" x="-2.54" y="-2.54" visible="pin" length="short" direction="pas" swaplevel="1"/>
+<pin name="VCC" x="-2.54" y="-10.16" visible="pin" length="short" direction="pas" swaplevel="1"/>
+<pin name="GND" x="-2.54" y="-7.62" visible="pin" length="short" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DC-005_(POWER-JACK-2.1MM)" prefix="J" uservalue="yes">
@@ -326,7 +367,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="FT232RL-BB-HEADER" prefix="FT232RL-HEADER-">
+<deviceset name="FT232RL-HEADER" prefix="FT232RL-HEADER-">
 <description>&lt;h1&gt;FT232RL Breakout Board Header&lt;/h1&gt;
 
 &lt;div&gt;&lt;a href=http://www.ftdichip.com/Products/ICs/FT232R.htm&gt;FT232RL product page&lt;/a&gt;&lt;/div&gt;
@@ -358,6 +399,25 @@
 <connect gate="G$1" pin="RXD" pad="2"/>
 <connect gate="G$1" pin="TXD" pad="3"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CP2102-HEADER" prefix="J">
+<gates>
+<gate name="G$1" symbol="CP2102-HEADER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CP2102-HEADER-UP">
+<connects>
+<connect gate="G$1" pin="3V3" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RXD" pad="3"/>
+<connect gate="G$1" pin="TXD" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>

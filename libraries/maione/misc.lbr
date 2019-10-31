@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -675,6 +675,9 @@ Fonte: 9pt = 2.8mm &lt;p&gt;</description>
 <wire x1="19.05" y1="-16.51" x2="-1.27" y2="-16.51" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-16.51" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 </package>
+<package name="PAD_SMD_01">
+<smd name="P$1" x="0" y="0" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FIDUCIAL">
@@ -807,8 +810,7 @@ Fonte: 9pt = 2.8mm &lt;p&gt;</description>
 </symbol>
 <symbol name="BANANA_CONN">
 <circle x="0" y="0" radius="1.2951" width="0.254" layer="94"/>
-<text x="-1.016" y="1.778" size="1.27" layer="95">&gt;NAME</text>
-<text x="-1.016" y="-3.048" size="1.27" layer="96">&gt;VALUE</text>
+<text x="2.54" y="0" size="1.27" layer="95" align="center-left">&gt;NAME</text>
 <pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
 <symbol name="I2C_STANDARD">
@@ -1181,6 +1183,21 @@ to be daisy chained easily.</description>
 <connect gate="G$1" pin="BAT-" pad="BAT-"/>
 <connect gate="G$1" pin="VIN+" pad="VIN+"/>
 <connect gate="G$1" pin="VIN-" pad="VIN-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAD_01" prefix="P">
+<gates>
+<gate name="G$1" symbol="BANANA_CONN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PAD_SMD_01">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>

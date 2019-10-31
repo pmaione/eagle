@@ -13,7 +13,7 @@ Assign F7 'Grid mm';
 Assign F8 'Grid inch';
 
 Assign F9 'Grid inch 0.1 on; Grid alt inch 0.05;';
-Assign F10 'Grid inch 0.01 on; Grid alt inch 0.025;';
+Assign F10 'Grid inch 0.05 on; Grid alt inch 0.025;';
 Assign F11 'Grid inch 0.05 on; Grid alt inch 0.01;';
 Assign F12 'Grid mm 1 on; Grid alt mm 0.1;';
 
