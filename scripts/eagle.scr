@@ -1,3 +1,4 @@
+# -*- mode: conf; -*-
 # <b>Script de configuração do EAGLE</b> <p>
 # Este arquivo define as configuraçoes do Eagle
 #
@@ -41,7 +42,7 @@ Assign C+N 'Name';
 Assign CS+S 'Smash';
 
 # Executa o script que define as cores padrao
-scr default-colors-brd.scr
+# scr default-colors-brd.scr
 
 
 #===========================================================
@@ -140,6 +141,7 @@ Grid alt inch 0.05;
 Grid dots;
 Grid on;
 Change Width 0.010;
+
 #===========================================================
 PAC:
 Grid inch 0.05;
@@ -155,7 +157,6 @@ Change Size 0.040;
 
 Change Font Vector;
 Change Ratio 12;
-Lines
 Change align center;
 
 # Furo de vias e pads
