@@ -120,6 +120,9 @@ Grid on;
 Change Width 0.006;
 Change Font Vector;
 
+# Executa o script que define as cores padrao
+scr default-colors-brd.scr
+
 #===========================================================
 LBR:
 Grid inch 0.1 on;
