@@ -4,7 +4,7 @@
         "name": "Pedro Maione"
     },
     "description": {
-        "EN": "EAGLE default 2 layer CAM job."
+        "EN": "JLCPCB"
     },
     "output_type": "zip",
     "outputs": [
@@ -213,9 +213,9 @@
                 {
                     "filename_format": "%ASSEMBLYPREFIX/%N",
                     "list_attribute": true,
-                    "list_type": "parts",
+                    "list_type": "values",
                     "name": "Bill of Material",
-                    "output_format": "html",
+                    "output_format": "csv",
                     "type": "bom"
                 }
             ]
@@ -227,7 +227,7 @@
             ]
         }
     ],
-    "timestamp": "2019-10-16T18:01:02",
+    "timestamp": "2020-02-12T17:53:04",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "9.2.0"

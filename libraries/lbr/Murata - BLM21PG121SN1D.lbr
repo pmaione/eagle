@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="4" number="39" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="4" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="0" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="0" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="MURATA_BLM21PG121SN1D_0">
+                    <description>MURA-FB-2</description>
+                    <wire layer="51" y2="0.625" width="0.1" x2="1.0" y1="-0.625" x1="1.0"/>
+                    <wire layer="51" y2="-0.625" width="0.1" x2="1.0" y1="-0.625" x1="-1.0"/>
+                    <wire layer="51" y2="0.625" width="0.1" x2="-1.0" y1="-0.625" x1="-1.0"/>
+                    <wire layer="51" y2="0.625" width="0.1" x2="1.0" y1="0.625" x1="-1.0"/>
+                    <wire layer="39" y2="0.725" width="0.1" x2="-2.1" y1="-0.725" x1="-2.1"/>
+                    <wire layer="39" y2="0.725" width="0.1" x2="2.1" y1="0.725" x1="-2.1"/>
+                    <wire layer="39" y2="-0.725" width="0.1" x2="2.1" y1="0.725" x1="2.1"/>
+                    <wire layer="39" y2="-0.725" width="0.1" x2="-2.1" y1="-0.725" x1="2.1"/>
+                    <text layer="21" align="bottom-left" y="0.925" x="-2.35" rot="R0" size="0.1">Land Pattern Adapted for 70um Land Pad Thickness</text>
+                    <text layer="25" align="bottom-left" y="0.925" x="-3.35" rot="R0" size="1.0">&gt;NAME</text>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="1.4" dy="1.0" y="0.0" x="1.3" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="1.4" dy="1.0" y="0.0" x="-1.3" rot="R0" cream="yes"/>
+                </package>
+                <package name="MURATA_BLM21PG121SN1D_1">
+                    <description>MURA-FB-2</description>
+                    <wire layer="51" y2="0.625" width="0.1" x2="1.0" y1="-0.625" x1="1.0"/>
+                    <wire layer="51" y2="-0.625" width="0.1" x2="1.0" y1="-0.625" x1="-1.0"/>
+                    <wire layer="51" y2="0.625" width="0.1" x2="-1.0" y1="-0.625" x1="-1.0"/>
+                    <wire layer="51" y2="0.625" width="0.1" x2="1.0" y1="0.625" x1="-1.0"/>
+                    <wire layer="39" y2="0.725" width="0.1" x2="-2.1" y1="-0.725" x1="-2.1"/>
+                    <wire layer="39" y2="0.725" width="0.1" x2="2.1" y1="0.725" x1="-2.1"/>
+                    <wire layer="39" y2="-0.725" width="0.1" x2="2.1" y1="0.725" x1="2.1"/>
+                    <wire layer="39" y2="-0.725" width="0.1" x2="-2.1" y1="-0.725" x1="2.1"/>
+                    <text layer="21" align="bottom-left" y="0.925" x="-2.35" rot="R0" size="0.1">Land Pattern Adapted for 35um Land Pad Thickness</text>
+                    <text layer="25" align="bottom-left" y="0.925" x="-3.35" rot="R0" size="1.0">&gt;NAME</text>
+                    <rectangle layer="1" y2="0.6" x2="-0.6" y1="-0.6" x1="-2.0"/>
+                    <rectangle layer="1" y2="0.6" x2="2.0" y1="-0.6" x1="0.6"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="1.4" dy="1.0" y="0.0" x="1.3" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="1.4" dy="1.0" y="0.0" x="-1.3" rot="R0" cream="yes"/>
+                </package>
+                <package name="MURATA_BLM21PG121SN1D_2">
+                    <description>MURA-FB-2</description>
+                    <wire layer="51" y2="0.625" width="0.1" x2="1.0" y1="0.625" x1="-1.0"/>
+                    <wire layer="51" y2="0.625" width="0.1" x2="-1.0" y1="-0.625" x1="-1.0"/>
+                    <wire layer="51" y2="-0.625" width="0.1" x2="1.0" y1="-0.625" x1="-1.0"/>
+                    <wire layer="51" y2="0.625" width="0.1" x2="1.0" y1="-0.625" x1="1.0"/>
+                    <wire layer="39" y2="1.3" width="0.1" x2="-2.1" y1="-1.3" x1="-2.1"/>
+                    <wire layer="39" y2="1.3" width="0.1" x2="2.1" y1="1.3" x1="-2.1"/>
+                    <wire layer="39" y2="-1.3" width="0.1" x2="2.1" y1="1.3" x1="2.1"/>
+                    <wire layer="39" y2="-1.3" width="0.1" x2="-2.1" y1="-1.3" x1="2.1"/>
+                    <text layer="21" align="bottom-left" y="1.5" x="-2.35" rot="R0" size="0.1">Land Pattern Adapted for 18um Land Pad Thickness</text>
+                    <text layer="25" align="bottom-left" y="1.5" x="-3.35" rot="R0" size="1.0">&gt;NAME</text>
+                    <rectangle layer="1" y2="1.2" x2="2.0" y1="-1.2" x1="0.6"/>
+                    <rectangle layer="1" y2="1.2" x2="-0.6" y1="-1.2" x1="-2.0"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="1.4" dy="1.0" y="0.0" x="-1.3" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="1.4" dy="1.0" y="0.0" x="1.3" rot="R0" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="MURATA_BLM21PG121SN1D_0_0">
+                    <description>MURA-FB-2</description>
+                    <wire layer="94" y2="-2.54" width="0.254" curve="90.0" x2="0.0" y1="-1.27" x1="1.27"/>
+                    <wire layer="94" y2="-1.27" width="0.254" curve="90.0" x2="1.27" y1="-2.54" x1="2.54"/>
+                    <wire layer="94" y2="-2.54" width="0.254" curve="90.0" x2="2.54" y1="-1.27" x1="3.81"/>
+                    <wire layer="94" y2="-1.27" width="0.254" curve="90.0" x2="3.81" y1="-2.54" x1="5.08"/>
+                    <wire layer="94" y2="-2.54" width="0.254" curve="90.0" x2="5.08" y1="-1.27" x1="6.35"/>
+                    <wire layer="94" y2="-1.27" width="0.254" curve="90.0" x2="6.35" y1="-2.54" x1="7.62"/>
+                    <wire layer="94" y2="-2.54" width="0.254" curve="90.0" x2="7.62" y1="-1.27" x1="8.89"/>
+                    <wire layer="94" y2="-1.27" width="0.254" curve="90.0" x2="8.89" y1="-2.54" x1="10.16"/>
+                    <wire layer="94" y2="-0.508" width="0.254" x2="5.588" y1="-0.508" x1="4.572"/>
+                    <wire layer="94" y2="-0.508" width="0.254" x2="1.016" y1="-0.508" x1="0.0"/>
+                    <wire layer="94" y2="-0.508" width="0.254" x2="3.302" y1="-0.508" x1="2.286"/>
+                    <wire layer="94" y2="-0.508" width="0.254" x2="7.874" y1="-0.508" x1="6.858"/>
+                    <wire layer="94" y2="-0.508" width="0.254" x2="10.16" y1="-0.508" x1="9.144"/>
+                    <wire layer="94" y2="-2.54" width="0.15" x2="0.0" y1="-2.54" x1="0.0"/>
+                    <wire layer="94" y2="-2.54" width="0.15" x2="10.16" y1="-2.54" x1="10.16"/>
+                    <text layer="95" align="top-left" y="2.032" x="0.0" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-8.89" x="0.0" rot="R0" size="2.54">BLM21PG121SN1D</text>
+                    <pin direction="pas" name="1" visible="pad" length="middle" y="-2.54" x="-5.08"/>
+                    <pin direction="pas" name="2" visible="pad" length="middle" y="-2.54" x="15.24" rot="R180"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="FB" name="MURATA_BLM21PG121SN1D">
+                    <description>MURA-FB-2</description>
+                    <gates>
+                        <gate name="G$0" symbol="MURATA_BLM21PG121SN1D_0_0" x="0"/>
+                    </gates>
+                    <devices>
+                        <device name="MURATA_BLM21PG121SN1D_0_0" package="MURATA_BLM21PG121SN1D_0">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="1"/>
+                                <connect gate="G$0" pad="2" pin="2"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="ciiva_ids" value="2312463"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="5227884C-72C6-4CBA-8BA1-027F7623BE91"/>
+                                    <attribute name="Rated_Current" value="3000 mA"/>
+                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
+                                    <attribute name="MPN" value="BLM21PG121SN1D"/>
+                                    <attribute name="DC_Resistance" value="0.03 Ohm Max."/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.murata.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="MF" value="Murata"/>
+                                    <attribute name="prefix" value="FB"/>
+                                    <attribute name="import_ts" value="1521862918"/>
+                                    <attribute name="Datasheet_Version" value="08/2013"/>
+                                    <attribute name="Packing" value="Tape and Reel"/>
+                                    <attribute name="Package_Description" value="2-Pin Chip, Body 2 x 1.25 mm"/>
+                                    <attribute name="datasheet" value="http://www.murata.com/products/catalog/pdf/c31e.pdf"/>
+                                    <attribute name="vault_revision" value="09008BFC-B926-4D29-83C7-20F4017951F0"/>
+                                    <attribute name="footprint_variant_name_0" value="MURA-BLM21-B40-CHIP-2_V3"/>
+                                    <attribute name="release_date" value="1390553353"/>
+                                    <attribute name="footprint_variant_name_2" value="MURA-BLM21-B40-CHIP-2_V1"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
+                                    <attribute name="Operating_Temperature_Range" value="-55 to 125 degC"/>
+                                    <attribute name="footprint_variant_name_1" value="MURA-BLM21-B40-CHIP-2_V2"/>
+                                    <attribute name="Impedance_at_100_MHz" value="120 Ohm +/- 25%"/>
+                                    <attribute name="package" value="BLM21_H1050-2"/>
+                                    <attribute name="Component_Link_3_URL" value="http://www.murata.com/products/catalog/pdf/c31e.pdf"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="MURATA_BLM21PG121SN1D_0_1" package="MURATA_BLM21PG121SN1D_1">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="1"/>
+                                <connect gate="G$0" pad="2" pin="2"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="ciiva_ids" value="2312463"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="5227884C-72C6-4CBA-8BA1-027F7623BE91"/>
+                                    <attribute name="Rated_Current" value="3000 mA"/>
+                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
+                                    <attribute name="MPN" value="BLM21PG121SN1D"/>
+                                    <attribute name="DC_Resistance" value="0.03 Ohm Max."/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.murata.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="MF" value="Murata"/>
+                                    <attribute name="prefix" value="FB"/>
+                                    <attribute name="import_ts" value="1521862918"/>
+                                    <attribute name="Datasheet_Version" value="08/2013"/>
+                                    <attribute name="Packing" value="Tape and Reel"/>
+                                    <attribute name="Package_Description" value="2-Pin Chip, Body 2 x 1.25 mm"/>
+                                    <attribute name="datasheet" value="http://www.murata.com/products/catalog/pdf/c31e.pdf"/>
+                                    <attribute name="vault_revision" value="09008BFC-B926-4D29-83C7-20F4017951F0"/>
+                                    <attribute name="footprint_variant_name_0" value="MURA-BLM21-B40-CHIP-2_V3"/>
+                                    <attribute name="release_date" value="1390553353"/>
+                                    <attribute name="footprint_variant_name_2" value="MURA-BLM21-B40-CHIP-2_V1"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
+                                    <attribute name="Operating_Temperature_Range" value="-55 to 125 degC"/>
+                                    <attribute name="footprint_variant_name_1" value="MURA-BLM21-B40-CHIP-2_V2"/>
+                                    <attribute name="Impedance_at_100_MHz" value="120 Ohm +/- 25%"/>
+                                    <attribute name="package" value="BLM21_H1050-2"/>
+                                    <attribute name="Component_Link_3_URL" value="http://www.murata.com/products/catalog/pdf/c31e.pdf"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="MURATA_BLM21PG121SN1D_0_2" package="MURATA_BLM21PG121SN1D_2">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="1"/>
+                                <connect gate="G$0" pad="2" pin="2"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="ciiva_ids" value="2312463"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="5227884C-72C6-4CBA-8BA1-027F7623BE91"/>
+                                    <attribute name="Rated_Current" value="3000 mA"/>
+                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
+                                    <attribute name="MPN" value="BLM21PG121SN1D"/>
+                                    <attribute name="DC_Resistance" value="0.03 Ohm Max."/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.murata.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="MF" value="Murata"/>
+                                    <attribute name="prefix" value="FB"/>
+                                    <attribute name="import_ts" value="1521862918"/>
+                                    <attribute name="Datasheet_Version" value="08/2013"/>
+                                    <attribute name="Packing" value="Tape and Reel"/>
+                                    <attribute name="Package_Description" value="2-Pin Chip, Body 2 x 1.25 mm"/>
+                                    <attribute name="datasheet" value="http://www.murata.com/products/catalog/pdf/c31e.pdf"/>
+                                    <attribute name="vault_revision" value="09008BFC-B926-4D29-83C7-20F4017951F0"/>
+                                    <attribute name="footprint_variant_name_0" value="MURA-BLM21-B40-CHIP-2_V3"/>
+                                    <attribute name="release_date" value="1390553353"/>
+                                    <attribute name="footprint_variant_name_2" value="MURA-BLM21-B40-CHIP-2_V1"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
+                                    <attribute name="Operating_Temperature_Range" value="-55 to 125 degC"/>
+                                    <attribute name="footprint_variant_name_1" value="MURA-BLM21-B40-CHIP-2_V2"/>
+                                    <attribute name="Impedance_at_100_MHz" value="120 Ohm +/- 25%"/>
+                                    <attribute name="package" value="BLM21_H1050-2"/>
+                                    <attribute name="Component_Link_3_URL" value="http://www.murata.com/products/catalog/pdf/c31e.pdf"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>
