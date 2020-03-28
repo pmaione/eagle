@@ -1,3 +1,0 @@
-# <b>Exporta o Top Silk (Layout)</b> <p>
-# Exporta as layers: Dimension, tPlace e tValue
-RUN exp2image monochrome 300 .bmp 20 21 27

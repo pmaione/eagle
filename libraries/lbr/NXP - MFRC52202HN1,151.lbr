@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="0" number="4" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="0" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="4" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="4" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="NXP_MFRC52202HN1,151_0">
+                    <description>IC RFID READER 13.56MHZ 32HVQFN</description>
+                    <wire layer="51" y2="2.55" width="0.15" x2="-2.55" y1="-2.55" x1="-2.55"/>
+                    <wire layer="51" y2="2.55" width="0.15" x2="2.55" y1="2.55" x1="-2.55"/>
+                    <wire layer="51" y2="-2.55" width="0.15" x2="2.55" y1="2.55" x1="2.55"/>
+                    <wire layer="51" y2="-2.55" width="0.15" x2="-2.55" y1="-2.55" x1="2.55"/>
+                    <wire layer="41" y2="3.125" width="0.1" x2="-3.125" y1="-3.125" x1="-3.125"/>
+                    <wire layer="41" y2="3.125" width="0.1" x2="3.125" y1="3.125" x1="-3.125"/>
+                    <wire layer="41" y2="-3.125" width="0.1" x2="3.125" y1="3.125" x1="3.125"/>
+                    <wire layer="41" y2="-3.125" width="0.1" x2="-3.125" y1="-3.125" x1="3.125"/>
+                    <wire layer="21" y2="2.55" width="0.15" x2="-2.27" y1="2.55" x1="-2.55"/>
+                    <wire layer="21" y2="2.55" width="0.15" x2="2.55" y1="2.55" x1="2.27"/>
+                    <wire layer="21" y2="-2.27" width="0.15" x2="2.55" y1="-2.55" x1="2.55"/>
+                    <wire layer="21" y2="2.55" width="0.15" x2="2.55" y1="2.27" x1="2.55"/>
+                    <wire layer="21" y2="-2.55" width="0.15" x2="-2.27" y1="-2.55" x1="-2.55"/>
+                    <wire layer="21" y2="-2.55" width="0.15" x2="2.55" y1="-2.55" x1="2.27"/>
+                    <wire layer="21" y2="-2.27" width="0.15" x2="-2.55" y1="-2.55" x1="-2.55"/>
+                    <wire layer="21" y2="2.55" width="0.15" x2="-2.55" y1="2.27" x1="-2.55"/>
+                    <text layer="25" align="bottom-left" y="3.4" x="-3.025" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="1.75" x="-3.6" layer="21" radius="0.25" width="0.0"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="0.9" dy="0.29" y="1.75" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="0.9" dy="0.29" y="1.25" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="0" dx="0.9" dy="0.29" y="0.75" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="0" dx="0.9" dy="0.29" y="0.25" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-0.25" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-0.75" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-1.25" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-1.75" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-1.75" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-1.25" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-0.75" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-0.25" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="0" dx="0.9" dy="0.29" y="0.25" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="0" dx="0.9" dy="0.29" y="0.75" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="0" dx="0.9" dy="0.29" y="1.25" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="0" dx="0.9" dy="0.29" y="1.75" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-2.55" x="-1.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-2.55" x="-1.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-2.55" x="-0.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-2.55" x="-0.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-2.55" x="0.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-2.55" x="0.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-2.55" x="1.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="0" dx="0.9" dy="0.29" y="-2.55" x="1.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="0" dx="0.9" dy="0.29" y="2.55" x="1.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="0" dx="0.9" dy="0.29" y="2.55" x="1.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="0" dx="0.9" dy="0.29" y="2.55" x="0.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="0" dx="0.9" dy="0.29" y="2.55" x="0.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="0" dx="0.9" dy="0.29" y="2.55" x="-0.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="0" dx="0.9" dy="0.29" y="2.55" x="-0.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="0" dx="0.9" dy="0.29" y="2.55" x="-1.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="0" dx="0.9" dy="0.29" y="2.55" x="-1.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="33" stop="yes" roundness="0" dx="3.1" dy="3.1" y="0.0" x="0.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_34" stop="yes" roundness="0" dx="0.7" dy="0.7" y="0.55" x="-0.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_35" stop="yes" roundness="0" dx="0.7" dy="0.7" y="0.55" x="0.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_36" stop="yes" roundness="0" dx="0.7" dy="0.7" y="-0.55" x="-0.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_37" stop="yes" roundness="0" dx="0.7" dy="0.7" y="-0.55" x="0.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_38" stop="yes" roundness="0" dx="0.85" dy="0.24" y="1.75" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_39" stop="yes" roundness="0" dx="0.85" dy="0.24" y="1.25" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_40" stop="yes" roundness="0" dx="0.85" dy="0.24" y="0.75" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_41" stop="yes" roundness="0" dx="0.85" dy="0.24" y="0.25" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_42" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-0.25" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_43" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-0.75" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_44" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-1.25" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_45" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-1.75" x="-2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_46" stop="yes" roundness="0" dx="0.85" dy="0.24" y="1.75" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_47" stop="yes" roundness="0" dx="0.85" dy="0.24" y="1.25" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_48" stop="yes" roundness="0" dx="0.85" dy="0.24" y="0.75" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_49" stop="yes" roundness="0" dx="0.85" dy="0.24" y="0.25" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_50" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-0.25" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_51" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-0.75" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_52" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-1.25" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_53" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-1.75" x="2.55" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_54" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-2.55" x="-1.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_55" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-2.55" x="-1.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_56" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-2.55" x="-0.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_57" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-2.55" x="-0.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_58" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-2.55" x="0.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_59" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-2.55" x="0.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_60" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-2.55" x="1.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_61" stop="yes" roundness="0" dx="0.85" dy="0.24" y="-2.55" x="1.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_62" stop="yes" roundness="0" dx="0.85" dy="0.24" y="2.55" x="1.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_63" stop="yes" roundness="0" dx="0.85" dy="0.24" y="2.55" x="1.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_64" stop="yes" roundness="0" dx="0.85" dy="0.24" y="2.55" x="0.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_65" stop="yes" roundness="0" dx="0.85" dy="0.24" y="2.55" x="0.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_66" stop="yes" roundness="0" dx="0.85" dy="0.24" y="2.55" x="-0.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_67" stop="yes" roundness="0" dx="0.85" dy="0.24" y="2.55" x="-0.75" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_68" stop="yes" roundness="0" dx="0.85" dy="0.24" y="2.55" x="-1.25" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="smd_69" stop="yes" roundness="0" dx="0.85" dy="0.24" y="2.55" x="-1.75" rot="R270" cream="yes"/>
+                </package>
+                <package name="NXP_MFRC52202HN1,151_1">
+                    <description>IC RFID READER 13.56MHZ 32HVQFN</description>
+                    <wire layer="51" y2="2.5" width="0.15" x2="-2.5" y1="-2.5" x1="-2.5"/>
+                    <wire layer="51" y2="2.5" width="0.15" x2="2.5" y1="2.5" x1="-2.5"/>
+                    <wire layer="51" y2="-2.5" width="0.15" x2="2.5" y1="2.5" x1="2.5"/>
+                    <wire layer="51" y2="-2.5" width="0.15" x2="-2.5" y1="-2.5" x1="2.5"/>
+                    <wire layer="21" y2="-2.5" width="0.15" x2="2.5" y1="-2.5" x1="2.25"/>
+                    <wire layer="21" y2="-2.25" width="0.15" x2="2.5" y1="-2.5" x1="2.5"/>
+                    <wire layer="21" y2="2.5" width="0.15" x2="2.5" y1="2.5" x1="2.25"/>
+                    <wire layer="21" y2="2.25" width="0.15" x2="2.5" y1="2.5" x1="2.5"/>
+                    <wire layer="21" y2="-2.5" width="0.15" x2="-2.5" y1="-2.5" x1="-2.25"/>
+                    <wire layer="21" y2="-2.25" width="0.15" x2="-2.5" y1="-2.5" x1="-2.5"/>
+                    <wire layer="21" y2="2.5" width="0.15" x2="-2.5" y1="2.5" x1="-2.25"/>
+                    <wire layer="21" y2="2.25" width="0.15" x2="-2.5" y1="2.5" x1="-2.5"/>
+                    <wire layer="41" y2="3.456" width="0.1" x2="-3.456" y1="-3.456" x1="-3.456"/>
+                    <wire layer="41" y2="3.456" width="0.1" x2="3.456" y1="3.456" x1="-3.456"/>
+                    <wire layer="41" y2="-3.456" width="0.1" x2="3.456" y1="3.456" x1="3.456"/>
+                    <wire layer="41" y2="-3.456" width="0.1" x2="-3.456" y1="-3.456" x1="3.456"/>
+                    <text layer="25" align="bottom-left" y="3.606" x="-3.206" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="1.75" x="-3.756" layer="21" radius="0.25" width="0.0"/>
+                    <rectangle layer="31" y2="1.028" x2="1.028" y1="-1.028" x1="-1.028"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="1.01" dy="0.239" y="1.75" x="-2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="1.01" dy="0.239" y="1.25" x="-2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="1.01" dy="0.239" y="0.75" x="-2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="1.01" dy="0.239" y="0.25" x="-2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="1.01" dy="0.239" y="-0.25" x="-2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="1.01" dy="0.239" y="-0.75" x="-2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="1.01" dy="0.239" y="-1.25" x="-2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="1.01" dy="0.239" y="-1.75" x="-2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="1.01" dy="0.239" y="-1.75" x="2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="1.01" dy="0.239" y="-1.25" x="2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="1.01" dy="0.239" y="-0.75" x="2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="1.01" dy="0.239" y="-0.25" x="2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="1.01" dy="0.239" y="0.25" x="2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="1.01" dy="0.239" y="0.75" x="2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="1.01" dy="0.239" y="1.25" x="2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="1.01" dy="0.239" y="1.75" x="2.451" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.239" dy="1.01" y="-2.451" x="-1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.239" dy="1.01" y="-2.451" x="-1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.239" dy="1.01" y="-2.451" x="-0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.239" dy="1.01" y="-2.451" x="-0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.239" dy="1.01" y="-2.451" x="0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.239" dy="1.01" y="-2.451" x="0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.239" dy="1.01" y="-2.451" x="1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.239" dy="1.01" y="-2.451" x="1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="100" dx="0.239" dy="1.01" y="2.451" x="1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="100" dx="0.239" dy="1.01" y="2.451" x="1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="100" dx="0.239" dy="1.01" y="2.451" x="0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="100" dx="0.239" dy="1.01" y="2.451" x="0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="100" dx="0.239" dy="1.01" y="2.451" x="-0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="100" dx="0.239" dy="1.01" y="2.451" x="-0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="100" dx="0.239" dy="1.01" y="2.451" x="-1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="100" dx="0.239" dy="1.01" y="2.451" x="-1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="33" stop="yes" roundness="0" dx="3.25" dy="3.25" y="0.0" x="0.0" rot="R0" cream="yes"/>
+                </package>
+                <package name="NXP_MFRC52202HN1,151_2">
+                    <description>IC RFID READER 13.56MHZ 32HVQFN</description>
+                    <wire layer="51" y2="2.5" width="0.15" x2="-2.5" y1="-2.5" x1="-2.5"/>
+                    <wire layer="51" y2="2.5" width="0.15" x2="2.5" y1="2.5" x1="-2.5"/>
+                    <wire layer="51" y2="-2.5" width="0.15" x2="2.5" y1="2.5" x1="2.5"/>
+                    <wire layer="51" y2="-2.5" width="0.15" x2="-2.5" y1="-2.5" x1="2.5"/>
+                    <wire layer="21" y2="-2.5" width="0.15" x2="2.5" y1="-2.5" x1="2.25"/>
+                    <wire layer="21" y2="-2.25" width="0.15" x2="2.5" y1="-2.5" x1="2.5"/>
+                    <wire layer="21" y2="2.5" width="0.15" x2="2.5" y1="2.5" x1="2.25"/>
+                    <wire layer="21" y2="2.25" width="0.15" x2="2.5" y1="2.5" x1="2.5"/>
+                    <wire layer="21" y2="-2.5" width="0.15" x2="-2.5" y1="-2.5" x1="-2.25"/>
+                    <wire layer="21" y2="-2.25" width="0.15" x2="-2.5" y1="-2.5" x1="-2.5"/>
+                    <wire layer="21" y2="2.5" width="0.15" x2="-2.5" y1="2.5" x1="-2.25"/>
+                    <wire layer="21" y2="2.25" width="0.15" x2="-2.5" y1="2.5" x1="-2.5"/>
+                    <wire layer="41" y2="3.106" width="0.1" x2="-3.106" y1="-3.106" x1="-3.106"/>
+                    <wire layer="41" y2="3.106" width="0.1" x2="3.106" y1="3.106" x1="-3.106"/>
+                    <wire layer="41" y2="-3.106" width="0.1" x2="3.106" y1="3.106" x1="3.106"/>
+                    <wire layer="41" y2="-3.106" width="0.1" x2="-3.106" y1="-3.106" x1="3.106"/>
+                    <text layer="25" align="bottom-left" y="3.381" x="-3.031" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="1.75" x="-3.656" layer="21" radius="0.25" width="0.0"/>
+                    <rectangle layer="31" y2="1.028" x2="1.028" y1="-1.028" x1="-1.028"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="0.91" dy="0.239" y="1.75" x="-2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="0.91" dy="0.239" y="1.25" x="-2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="0.91" dy="0.239" y="0.75" x="-2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="0.91" dy="0.239" y="0.25" x="-2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="0.91" dy="0.239" y="-0.25" x="-2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="0.91" dy="0.239" y="-0.75" x="-2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="0.91" dy="0.239" y="-1.25" x="-2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="0.91" dy="0.239" y="-1.75" x="-2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="0.91" dy="0.239" y="-1.75" x="2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="0.91" dy="0.239" y="-1.25" x="2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="0.91" dy="0.239" y="-0.75" x="2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="0.91" dy="0.239" y="-0.25" x="2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="0.91" dy="0.239" y="0.25" x="2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="0.91" dy="0.239" y="0.75" x="2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="0.91" dy="0.239" y="1.25" x="2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="0.91" dy="0.239" y="1.75" x="2.401" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.239" dy="0.91" y="-2.401" x="-1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.239" dy="0.91" y="-2.401" x="-1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.239" dy="0.91" y="-2.401" x="-0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.239" dy="0.91" y="-2.401" x="-0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.239" dy="0.91" y="-2.401" x="0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.239" dy="0.91" y="-2.401" x="0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.239" dy="0.91" y="-2.401" x="1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.239" dy="0.91" y="-2.401" x="1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="100" dx="0.239" dy="0.91" y="2.401" x="1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="100" dx="0.239" dy="0.91" y="2.401" x="1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="100" dx="0.239" dy="0.91" y="2.401" x="0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="100" dx="0.239" dy="0.91" y="2.401" x="0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="100" dx="0.239" dy="0.91" y="2.401" x="-0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="100" dx="0.239" dy="0.91" y="2.401" x="-0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="100" dx="0.239" dy="0.91" y="2.401" x="-1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="100" dx="0.239" dy="0.91" y="2.401" x="-1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="33" stop="yes" roundness="0" dx="3.25" dy="3.25" y="0.0" x="0.0" rot="R0" cream="yes"/>
+                </package>
+                <package name="NXP_MFRC52202HN1,151_3">
+                    <description>IC RFID READER 13.56MHZ 32HVQFN</description>
+                    <wire layer="51" y2="2.5" width="0.15" x2="-2.5" y1="-2.5" x1="-2.5"/>
+                    <wire layer="51" y2="2.5" width="0.15" x2="2.5" y1="2.5" x1="-2.5"/>
+                    <wire layer="51" y2="-2.5" width="0.15" x2="2.5" y1="2.5" x1="2.5"/>
+                    <wire layer="51" y2="-2.5" width="0.15" x2="-2.5" y1="-2.5" x1="2.5"/>
+                    <wire layer="21" y2="-2.5" width="0.15" x2="2.5" y1="-2.5" x1="2.25"/>
+                    <wire layer="21" y2="-2.25" width="0.15" x2="2.5" y1="-2.5" x1="2.5"/>
+                    <wire layer="21" y2="2.5" width="0.15" x2="2.5" y1="2.5" x1="2.25"/>
+                    <wire layer="21" y2="2.25" width="0.15" x2="2.5" y1="2.5" x1="2.5"/>
+                    <wire layer="21" y2="-2.5" width="0.15" x2="-2.5" y1="-2.5" x1="-2.25"/>
+                    <wire layer="21" y2="-2.25" width="0.15" x2="-2.5" y1="-2.5" x1="-2.5"/>
+                    <wire layer="21" y2="2.5" width="0.15" x2="-2.5" y1="2.5" x1="-2.25"/>
+                    <wire layer="21" y2="2.25" width="0.15" x2="-2.5" y1="2.5" x1="-2.5"/>
+                    <wire layer="41" y2="2.856" width="0.1" x2="-2.856" y1="-2.856" x1="-2.856"/>
+                    <wire layer="41" y2="2.856" width="0.1" x2="2.856" y1="2.856" x1="-2.856"/>
+                    <wire layer="41" y2="-2.856" width="0.1" x2="2.856" y1="2.856" x1="2.856"/>
+                    <wire layer="41" y2="-2.856" width="0.1" x2="-2.856" y1="-2.856" x1="2.856"/>
+                    <text layer="25" align="bottom-left" y="3.106" x="-2.706" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="1.75" x="-3.381" layer="21" radius="0.25" width="0.0"/>
+                    <rectangle layer="31" y2="1.028" x2="1.028" y1="-1.028" x1="-1.028"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="0.81" dy="0.239" y="1.75" x="-2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="0.81" dy="0.239" y="1.25" x="-2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="0.81" dy="0.239" y="0.75" x="-2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="0.81" dy="0.239" y="0.25" x="-2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="0.81" dy="0.239" y="-0.25" x="-2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="0.81" dy="0.239" y="-0.75" x="-2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="0.81" dy="0.239" y="-1.25" x="-2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="0.81" dy="0.239" y="-1.75" x="-2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="0.81" dy="0.239" y="-1.75" x="2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="0.81" dy="0.239" y="-1.25" x="2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="0.81" dy="0.239" y="-0.75" x="2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="0.81" dy="0.239" y="-0.25" x="2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="0.81" dy="0.239" y="0.25" x="2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="0.81" dy="0.239" y="0.75" x="2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="0.81" dy="0.239" y="1.25" x="2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="0.81" dy="0.239" y="1.75" x="2.351" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.239" dy="0.81" y="-2.351" x="-1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.239" dy="0.81" y="-2.351" x="-1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.239" dy="0.81" y="-2.351" x="-0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.239" dy="0.81" y="-2.351" x="-0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.239" dy="0.81" y="-2.351" x="0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.239" dy="0.81" y="-2.351" x="0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.239" dy="0.81" y="-2.351" x="1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.239" dy="0.81" y="-2.351" x="1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="100" dx="0.239" dy="0.81" y="2.351" x="1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="100" dx="0.239" dy="0.81" y="2.351" x="1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="100" dx="0.239" dy="0.81" y="2.351" x="0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="100" dx="0.239" dy="0.81" y="2.351" x="0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="100" dx="0.239" dy="0.81" y="2.351" x="-0.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="100" dx="0.239" dy="0.81" y="2.351" x="-0.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="100" dx="0.239" dy="0.81" y="2.351" x="-1.25" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="100" dx="0.239" dy="0.81" y="2.351" x="-1.75" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="33" stop="yes" roundness="0" dx="3.25" dy="3.25" y="0.0" x="0.0" rot="R0" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="NXP_MFRC52202HN1,151_0_0">
+                    <description>IC RFID READER 13.56MHZ 32HVQFN</description>
+                    <wire layer="94" y2="-5.08" width="0.254" x2="2.54" y1="-78.74" x1="2.54"/>
+                    <wire layer="94" y2="-5.08" width="0.254" x2="50.8" y1="-5.08" x1="2.54"/>
+                    <wire layer="94" y2="-78.74" width="0.254" x2="50.8" y1="-5.08" x1="50.8"/>
+                    <wire layer="94" y2="-78.74" width="0.254" x2="2.54" y1="-78.74" x1="50.8"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="2.54" y1="-7.62" x1="2.54"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="2.54" y1="-10.16" x1="2.54"/>
+                    <wire layer="94" y2="-12.7" width="0.15" x2="2.54" y1="-12.7" x1="2.54"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="2.54" y1="-15.24" x1="2.54"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="2.54" y1="-17.78" x1="2.54"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="50.8" y1="-7.62" x1="50.8"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="50.8" y1="-10.16" x1="50.8"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="50.8" y1="-15.24" x1="50.8"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="50.8" y1="-17.78" x1="50.8"/>
+                    <wire layer="94" y2="-43.18" width="0.15" x2="2.54" y1="-43.18" x1="2.54"/>
+                    <wire layer="94" y2="-48.26" width="0.15" x2="2.54" y1="-48.26" x1="2.54"/>
+                    <wire layer="94" y2="-50.8" width="0.15" x2="2.54" y1="-50.8" x1="2.54"/>
+                    <wire layer="94" y2="-53.34" width="0.15" x2="2.54" y1="-53.34" x1="2.54"/>
+                    <wire layer="94" y2="-55.88" width="0.15" x2="2.54" y1="-55.88" x1="2.54"/>
+                    <wire layer="94" y2="-58.42" width="0.15" x2="2.54" y1="-58.42" x1="2.54"/>
+                    <wire layer="94" y2="-60.96" width="0.15" x2="2.54" y1="-60.96" x1="2.54"/>
+                    <wire layer="94" y2="-63.5" width="0.15" x2="2.54" y1="-63.5" x1="2.54"/>
+                    <wire layer="94" y2="-68.58" width="0.15" x2="2.54" y1="-68.58" x1="2.54"/>
+                    <wire layer="94" y2="-76.2" width="0.15" x2="50.8" y1="-76.2" x1="50.8"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="2.54" y1="-22.86" x1="2.54"/>
+                    <wire layer="94" y2="-33.02" width="0.15" x2="50.8" y1="-33.02" x1="50.8"/>
+                    <wire layer="94" y2="-27.94" width="0.15" x2="2.54" y1="-27.94" x1="2.54"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="50.8" y1="-22.86" x1="50.8"/>
+                    <wire layer="94" y2="-33.02" width="0.15" x2="2.54" y1="-33.02" x1="2.54"/>
+                    <wire layer="94" y2="-27.94" width="0.15" x2="50.8" y1="-27.94" x1="50.8"/>
+                    <wire layer="94" y2="-38.1" width="0.15" x2="2.54" y1="-38.1" x1="2.54"/>
+                    <wire layer="94" y2="-73.66" width="0.15" x2="2.54" y1="-73.66" x1="2.54"/>
+                    <wire layer="94" y2="-76.2" width="0.15" x2="2.54" y1="-76.2" x1="2.54"/>
+                    <wire layer="94" y2="-60.96" width="0.15" x2="50.8" y1="-60.96" x1="50.8"/>
+                    <wire layer="94" y2="-63.5" width="0.15" x2="50.8" y1="-63.5" x1="50.8"/>
+                    <wire layer="94" y2="-66.04" width="0.15" x2="50.8" y1="-66.04" x1="50.8"/>
+                    <wire layer="94" y2="-68.58" width="0.15" x2="50.8" y1="-68.58" x1="50.8"/>
+                    <wire layer="94" y2="-71.12" width="0.15" x2="50.8" y1="-71.12" x1="50.8"/>
+                    <text layer="95" align="top-left" y="-2.54" x="2.54" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-81.28" x="2.54" rot="R0" size="2.54">MFRC52202HN1,151</text>
+                    <pin direction="pwr" name="AVDD" visible="both" length="middle" y="-7.62" x="-2.54"/>
+                    <pin direction="pwr" name="DVDD" visible="both" length="middle" y="-10.16" x="-2.54"/>
+                    <pin direction="pwr" name="PVDD" visible="both" length="middle" y="-12.7" x="-2.54"/>
+                    <pin direction="pwr" name="SVDD" visible="both" length="middle" y="-15.24" x="-2.54"/>
+                    <pin direction="pwr" name="TVDD" visible="both" length="middle" y="-17.78" x="-2.54"/>
+                    <pin direction="out" name="TX1" visible="both" length="middle" y="-7.62" x="55.88" rot="R180"/>
+                    <pin direction="out" name="TX2" visible="both" length="middle" y="-10.16" x="55.88" rot="R180"/>
+                    <pin direction="out" name="AUX1" visible="both" length="middle" y="-15.24" x="55.88" rot="R180"/>
+                    <pin direction="out" name="AUX2" visible="both" length="middle" y="-17.78" x="55.88" rot="R180"/>
+                    <pin direction="in" name="!RSTPD!" visible="both" length="middle" y="-43.18" x="-2.54"/>
+                    <pin direction="io" name="D1/ADR_5" visible="both" length="middle" y="-48.26" x="-2.54"/>
+                    <pin direction="io" name="D2/ADR_4" visible="both" length="middle" y="-50.8" x="-2.54"/>
+                    <pin direction="io" name="D3/ADR_3" visible="both" length="middle" y="-53.34" x="-2.54"/>
+                    <pin direction="io" name="D4/ADR_2" visible="both" length="middle" y="-55.88" x="-2.54"/>
+                    <pin direction="io" name="D5/ADR_1/SCK/DTRQ" visible="both" length="middle" y="-58.42" x="-2.54"/>
+                    <pin direction="io" name="D6/ADR_0/MOSI/MX" visible="both" length="middle" y="-60.96" x="-2.54"/>
+                    <pin direction="io" name="D7/SCL/MISO/TX" visible="both" length="middle" y="-63.5" x="-2.54"/>
+                    <pin direction="in" name="EA" visible="both" length="middle" y="-68.58" x="-2.54"/>
+                    <pin direction="pwr" name="EP" visible="both" length="middle" y="-76.2" x="55.88" rot="R180"/>
+                    <pin direction="in" name="I2C" visible="both" length="middle" y="-22.86" x="-2.54"/>
+                    <pin direction="out" name="IRQ" visible="both" length="middle" y="-33.02" x="55.88" rot="R180"/>
+                    <pin direction="in" name="MFIN" visible="both" length="middle" y="-27.94" x="-2.54"/>
+                    <pin direction="out" name="MFOUT" visible="both" length="middle" y="-22.86" x="55.88" rot="R180"/>
+                    <pin direction="in" name="OSCIN" visible="both" length="middle" y="-33.02" x="-2.54"/>
+                    <pin direction="out" name="OSCOUT" visible="both" length="middle" y="-27.94" x="55.88" rot="R180"/>
+                    <pin direction="in" name="RX" visible="both" length="middle" y="-38.1" x="-2.54"/>
+                    <pin direction="io" name="SDA/!SS!/RX" visible="both" length="middle" y="-73.66" x="-2.54"/>
+                    <pin direction="pwr" name="VMID" visible="both" length="middle" y="-76.2" x="-2.54"/>
+                    <pin direction="pwr" name="AVSS" visible="both" length="middle" y="-60.96" x="55.88" rot="R180"/>
+                    <pin direction="pwr" name="DVSS" visible="both" length="middle" y="-63.5" x="55.88" rot="R180"/>
+                    <pin direction="pwr" name="PVSS" visible="both" length="middle" y="-66.04" x="55.88" rot="R180"/>
+                    <pin direction="pwr" name="1_TVSS" visible="both" length="middle" y="-68.58" x="55.88" rot="R180"/>
+                    <pin direction="pwr" name="2_TVSS" visible="both" length="middle" y="-71.12" x="55.88" rot="R180"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="U" name="NXP_MFRC52202HN1,151">
+                    <description>IC RFID READER 13.56MHZ 32HVQFN</description>
+                    <gates>
+                        <gate name="G$0" symbol="NXP_MFRC52202HN1,151_0_0" x="0"/>
+                    </gates>
+                    <devices>
+                        <device name="NXP_MFRC52202HN1,151_0_0" package="NXP_MFRC52202HN1,151_0">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="I2C"/>
+                                <connect gate="G$0" pad="2" pin="PVDD"/>
+                                <connect gate="G$0" pad="3" pin="DVDD"/>
+                                <connect gate="G$0" pad="4" pin="DVSS"/>
+                                <connect gate="G$0" pad="5" pin="PVSS"/>
+                                <connect gate="G$0" pad="6" pin="!RSTPD!"/>
+                                <connect gate="G$0" pad="7" pin="MFIN"/>
+                                <connect gate="G$0" pad="8" pin="MFOUT"/>
+                                <connect gate="G$0" pad="9" pin="SVDD"/>
+                                <connect gate="G$0" pad="10" pin="1_TVSS"/>
+                                <connect gate="G$0" pad="11" pin="TX1"/>
+                                <connect gate="G$0" pad="12" pin="TVDD"/>
+                                <connect gate="G$0" pad="13" pin="TX2"/>
+                                <connect gate="G$0" pad="14" pin="2_TVSS"/>
+                                <connect gate="G$0" pad="15" pin="AVDD"/>
+                                <connect gate="G$0" pad="16" pin="VMID"/>
+                                <connect gate="G$0" pad="17" pin="RX"/>
+                                <connect gate="G$0" pad="18" pin="AVSS"/>
+                                <connect gate="G$0" pad="19" pin="AUX1"/>
+                                <connect gate="G$0" pad="20" pin="AUX2"/>
+                                <connect gate="G$0" pad="21" pin="OSCIN"/>
+                                <connect gate="G$0" pad="22" pin="OSCOUT"/>
+                                <connect gate="G$0" pad="23" pin="IRQ"/>
+                                <connect gate="G$0" pad="24" pin="SDA/!SS!/RX"/>
+                                <connect gate="G$0" pad="25" pin="D1/ADR_5"/>
+                                <connect gate="G$0" pad="26" pin="D2/ADR_4"/>
+                                <connect gate="G$0" pad="27" pin="D3/ADR_3"/>
+                                <connect gate="G$0" pad="28" pin="D4/ADR_2"/>
+                                <connect gate="G$0" pad="29" pin="D5/ADR_1/SCK/DTRQ"/>
+                                <connect gate="G$0" pad="30" pin="D6/ADR_0/MOSI/MX"/>
+                                <connect gate="G$0" pad="31" pin="D7/SCL/MISO/TX"/>
+                                <connect gate="G$0" pad="32" pin="EA"/>
+                                <connect gate="G$0" pad="33" pin="EP"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="mouser_description" value="RFID Transponders CONTACTLESS READER IC"/>
+                                    <attribute name="ambient_temperature_range_low" value="-25°C"/>
+                                    <attribute name="mouser_part_number" value="771-MFRC52202HN1151"/>
+                                    <attribute name="mfg_package_ident_rev" value="0"/>
+                                    <attribute name="footprint_parameters_1" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":400000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":500000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"A","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40}}}'/>
+                                    <attribute name="max_junction_temp" value="+100°C"/>
+                                    <attribute name="footprint_parameters_2" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":300000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":250000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"B","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="temperature_range_high" value="+100°C"/>
+                                    <attribute name="ambient_temperature_range_high" value="+85°C"/>
+                                    <attribute name="device_class_L2" value="RF Semiconductors and Devices"/>
+                                    <attribute name="digikey_description" value="IC RFID READER 13.56MHZ 32HVQFN"/>
+                                    <attribute name="device_class_L3" value="Transceivers"/>
+                                    <attribute name="data_rate" value="10Mbits/s"/>
+                                    <attribute name="digikey_part_number" value="568-8603-ND"/>
+                                    <attribute name="max_supply_voltage" value="3.6V"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="verification_version" value="0.0.0.3"/>
+                                    <attribute name="datasheet" value="https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf"/>
+                                    <attribute name="MF" value="NXP"/>
+                                    <attribute name="footprint_url" value="https://www.nxp.com/docs/en/package-information/SOT617-1.pdf"/>
+                                    <attribute name="nominal_supply_current" value="3-60mA"/>
+                                    <attribute name="interface" value="I2C,SPI,UART,RS-232"/>
+                                    <attribute name="automotive" value="No"/>
+                                    <attribute name="lead_free" value="Yes"/>
+                                    <attribute name="height" value="1mm"/>
+                                    <attribute name="mfg_package_ident" value="SOT617-1"/>
+                                    <attribute name="footprint_variant_name_0" value="Recommended_Land_Pattern"/>
+                                    <attribute name="footprint_variant_name_2" value="IPC_B"/>
+                                    <attribute name="footprint_variant_name_3" value="IPC_C"/>
+                                    <attribute name="MPN" value="MFRC52202HN1,151"/>
+                                    <attribute name="max_power_dissipation" value="200mW"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="device_class_L1" value="Integrated Circuits (ICs)"/>
+                                    <attribute name="mfg_package_ident_date" value="02/2016"/>
+                                    <attribute name="standoff_height" value="0mm"/>
+                                    <attribute name="max_frequency" value="13.56MHz"/>
+                                    <attribute name="footprint_parameters_3" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":200000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":100000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"C","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="footprint_variant_name_1" value="IPC_A"/>
+                                    <attribute name="min_supply_voltage" value="1.6V"/>
+                                    <attribute name="package" value="VQFN32"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="NXP_MFRC52202HN1,151_0_1" package="NXP_MFRC52202HN1,151_1">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="I2C"/>
+                                <connect gate="G$0" pad="2" pin="PVDD"/>
+                                <connect gate="G$0" pad="3" pin="DVDD"/>
+                                <connect gate="G$0" pad="4" pin="DVSS"/>
+                                <connect gate="G$0" pad="5" pin="PVSS"/>
+                                <connect gate="G$0" pad="6" pin="!RSTPD!"/>
+                                <connect gate="G$0" pad="7" pin="MFIN"/>
+                                <connect gate="G$0" pad="8" pin="MFOUT"/>
+                                <connect gate="G$0" pad="9" pin="SVDD"/>
+                                <connect gate="G$0" pad="10" pin="1_TVSS"/>
+                                <connect gate="G$0" pad="11" pin="TX1"/>
+                                <connect gate="G$0" pad="12" pin="TVDD"/>
+                                <connect gate="G$0" pad="13" pin="TX2"/>
+                                <connect gate="G$0" pad="14" pin="2_TVSS"/>
+                                <connect gate="G$0" pad="15" pin="AVDD"/>
+                                <connect gate="G$0" pad="16" pin="VMID"/>
+                                <connect gate="G$0" pad="17" pin="RX"/>
+                                <connect gate="G$0" pad="18" pin="AVSS"/>
+                                <connect gate="G$0" pad="19" pin="AUX1"/>
+                                <connect gate="G$0" pad="20" pin="AUX2"/>
+                                <connect gate="G$0" pad="21" pin="OSCIN"/>
+                                <connect gate="G$0" pad="22" pin="OSCOUT"/>
+                                <connect gate="G$0" pad="23" pin="IRQ"/>
+                                <connect gate="G$0" pad="24" pin="SDA/!SS!/RX"/>
+                                <connect gate="G$0" pad="25" pin="D1/ADR_5"/>
+                                <connect gate="G$0" pad="26" pin="D2/ADR_4"/>
+                                <connect gate="G$0" pad="27" pin="D3/ADR_3"/>
+                                <connect gate="G$0" pad="28" pin="D4/ADR_2"/>
+                                <connect gate="G$0" pad="29" pin="D5/ADR_1/SCK/DTRQ"/>
+                                <connect gate="G$0" pad="30" pin="D6/ADR_0/MOSI/MX"/>
+                                <connect gate="G$0" pad="31" pin="D7/SCL/MISO/TX"/>
+                                <connect gate="G$0" pad="32" pin="EA"/>
+                                <connect gate="G$0" pad="33" pin="EP"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="mouser_description" value="RFID Transponders CONTACTLESS READER IC"/>
+                                    <attribute name="ambient_temperature_range_low" value="-25°C"/>
+                                    <attribute name="mouser_part_number" value="771-MFRC52202HN1151"/>
+                                    <attribute name="mfg_package_ident_rev" value="0"/>
+                                    <attribute name="footprint_parameters_1" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":400000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":500000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"A","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40}}}'/>
+                                    <attribute name="max_junction_temp" value="+100°C"/>
+                                    <attribute name="footprint_parameters_2" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":300000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":250000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"B","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="temperature_range_high" value="+100°C"/>
+                                    <attribute name="ambient_temperature_range_high" value="+85°C"/>
+                                    <attribute name="device_class_L2" value="RF Semiconductors and Devices"/>
+                                    <attribute name="digikey_description" value="IC RFID READER 13.56MHZ 32HVQFN"/>
+                                    <attribute name="device_class_L3" value="Transceivers"/>
+                                    <attribute name="data_rate" value="10Mbits/s"/>
+                                    <attribute name="digikey_part_number" value="568-8603-ND"/>
+                                    <attribute name="max_supply_voltage" value="3.6V"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="verification_version" value="0.0.0.3"/>
+                                    <attribute name="datasheet" value="https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf"/>
+                                    <attribute name="MF" value="NXP"/>
+                                    <attribute name="footprint_url" value="https://www.nxp.com/docs/en/package-information/SOT617-1.pdf"/>
+                                    <attribute name="nominal_supply_current" value="3-60mA"/>
+                                    <attribute name="interface" value="I2C,SPI,UART,RS-232"/>
+                                    <attribute name="automotive" value="No"/>
+                                    <attribute name="lead_free" value="Yes"/>
+                                    <attribute name="height" value="1mm"/>
+                                    <attribute name="mfg_package_ident" value="SOT617-1"/>
+                                    <attribute name="footprint_variant_name_0" value="Recommended_Land_Pattern"/>
+                                    <attribute name="footprint_variant_name_2" value="IPC_B"/>
+                                    <attribute name="footprint_variant_name_3" value="IPC_C"/>
+                                    <attribute name="MPN" value="MFRC52202HN1,151"/>
+                                    <attribute name="max_power_dissipation" value="200mW"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="device_class_L1" value="Integrated Circuits (ICs)"/>
+                                    <attribute name="mfg_package_ident_date" value="02/2016"/>
+                                    <attribute name="standoff_height" value="0mm"/>
+                                    <attribute name="max_frequency" value="13.56MHz"/>
+                                    <attribute name="footprint_parameters_3" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":200000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":100000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"C","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="footprint_variant_name_1" value="IPC_A"/>
+                                    <attribute name="min_supply_voltage" value="1.6V"/>
+                                    <attribute name="package" value="VQFN32"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="NXP_MFRC52202HN1,151_0_2" package="NXP_MFRC52202HN1,151_2">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="I2C"/>
+                                <connect gate="G$0" pad="2" pin="PVDD"/>
+                                <connect gate="G$0" pad="3" pin="DVDD"/>
+                                <connect gate="G$0" pad="4" pin="DVSS"/>
+                                <connect gate="G$0" pad="5" pin="PVSS"/>
+                                <connect gate="G$0" pad="6" pin="!RSTPD!"/>
+                                <connect gate="G$0" pad="7" pin="MFIN"/>
+                                <connect gate="G$0" pad="8" pin="MFOUT"/>
+                                <connect gate="G$0" pad="9" pin="SVDD"/>
+                                <connect gate="G$0" pad="10" pin="1_TVSS"/>
+                                <connect gate="G$0" pad="11" pin="TX1"/>
+                                <connect gate="G$0" pad="12" pin="TVDD"/>
+                                <connect gate="G$0" pad="13" pin="TX2"/>
+                                <connect gate="G$0" pad="14" pin="2_TVSS"/>
+                                <connect gate="G$0" pad="15" pin="AVDD"/>
+                                <connect gate="G$0" pad="16" pin="VMID"/>
+                                <connect gate="G$0" pad="17" pin="RX"/>
+                                <connect gate="G$0" pad="18" pin="AVSS"/>
+                                <connect gate="G$0" pad="19" pin="AUX1"/>
+                                <connect gate="G$0" pad="20" pin="AUX2"/>
+                                <connect gate="G$0" pad="21" pin="OSCIN"/>
+                                <connect gate="G$0" pad="22" pin="OSCOUT"/>
+                                <connect gate="G$0" pad="23" pin="IRQ"/>
+                                <connect gate="G$0" pad="24" pin="SDA/!SS!/RX"/>
+                                <connect gate="G$0" pad="25" pin="D1/ADR_5"/>
+                                <connect gate="G$0" pad="26" pin="D2/ADR_4"/>
+                                <connect gate="G$0" pad="27" pin="D3/ADR_3"/>
+                                <connect gate="G$0" pad="28" pin="D4/ADR_2"/>
+                                <connect gate="G$0" pad="29" pin="D5/ADR_1/SCK/DTRQ"/>
+                                <connect gate="G$0" pad="30" pin="D6/ADR_0/MOSI/MX"/>
+                                <connect gate="G$0" pad="31" pin="D7/SCL/MISO/TX"/>
+                                <connect gate="G$0" pad="32" pin="EA"/>
+                                <connect gate="G$0" pad="33" pin="EP"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="mouser_description" value="RFID Transponders CONTACTLESS READER IC"/>
+                                    <attribute name="ambient_temperature_range_low" value="-25°C"/>
+                                    <attribute name="mouser_part_number" value="771-MFRC52202HN1151"/>
+                                    <attribute name="mfg_package_ident_rev" value="0"/>
+                                    <attribute name="footprint_parameters_1" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":400000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":500000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"A","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40}}}'/>
+                                    <attribute name="max_junction_temp" value="+100°C"/>
+                                    <attribute name="footprint_parameters_2" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":300000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":250000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"B","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="temperature_range_high" value="+100°C"/>
+                                    <attribute name="ambient_temperature_range_high" value="+85°C"/>
+                                    <attribute name="device_class_L2" value="RF Semiconductors and Devices"/>
+                                    <attribute name="digikey_description" value="IC RFID READER 13.56MHZ 32HVQFN"/>
+                                    <attribute name="device_class_L3" value="Transceivers"/>
+                                    <attribute name="data_rate" value="10Mbits/s"/>
+                                    <attribute name="digikey_part_number" value="568-8603-ND"/>
+                                    <attribute name="max_supply_voltage" value="3.6V"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="verification_version" value="0.0.0.3"/>
+                                    <attribute name="datasheet" value="https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf"/>
+                                    <attribute name="MF" value="NXP"/>
+                                    <attribute name="footprint_url" value="https://www.nxp.com/docs/en/package-information/SOT617-1.pdf"/>
+                                    <attribute name="nominal_supply_current" value="3-60mA"/>
+                                    <attribute name="interface" value="I2C,SPI,UART,RS-232"/>
+                                    <attribute name="automotive" value="No"/>
+                                    <attribute name="lead_free" value="Yes"/>
+                                    <attribute name="height" value="1mm"/>
+                                    <attribute name="mfg_package_ident" value="SOT617-1"/>
+                                    <attribute name="footprint_variant_name_0" value="Recommended_Land_Pattern"/>
+                                    <attribute name="footprint_variant_name_2" value="IPC_B"/>
+                                    <attribute name="footprint_variant_name_3" value="IPC_C"/>
+                                    <attribute name="MPN" value="MFRC52202HN1,151"/>
+                                    <attribute name="max_power_dissipation" value="200mW"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="device_class_L1" value="Integrated Circuits (ICs)"/>
+                                    <attribute name="mfg_package_ident_date" value="02/2016"/>
+                                    <attribute name="standoff_height" value="0mm"/>
+                                    <attribute name="max_frequency" value="13.56MHz"/>
+                                    <attribute name="footprint_parameters_3" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":200000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":100000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"C","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="footprint_variant_name_1" value="IPC_A"/>
+                                    <attribute name="min_supply_voltage" value="1.6V"/>
+                                    <attribute name="package" value="VQFN32"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="NXP_MFRC52202HN1,151_0_3" package="NXP_MFRC52202HN1,151_3">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="I2C"/>
+                                <connect gate="G$0" pad="2" pin="PVDD"/>
+                                <connect gate="G$0" pad="3" pin="DVDD"/>
+                                <connect gate="G$0" pad="4" pin="DVSS"/>
+                                <connect gate="G$0" pad="5" pin="PVSS"/>
+                                <connect gate="G$0" pad="6" pin="!RSTPD!"/>
+                                <connect gate="G$0" pad="7" pin="MFIN"/>
+                                <connect gate="G$0" pad="8" pin="MFOUT"/>
+                                <connect gate="G$0" pad="9" pin="SVDD"/>
+                                <connect gate="G$0" pad="10" pin="1_TVSS"/>
+                                <connect gate="G$0" pad="11" pin="TX1"/>
+                                <connect gate="G$0" pad="12" pin="TVDD"/>
+                                <connect gate="G$0" pad="13" pin="TX2"/>
+                                <connect gate="G$0" pad="14" pin="2_TVSS"/>
+                                <connect gate="G$0" pad="15" pin="AVDD"/>
+                                <connect gate="G$0" pad="16" pin="VMID"/>
+                                <connect gate="G$0" pad="17" pin="RX"/>
+                                <connect gate="G$0" pad="18" pin="AVSS"/>
+                                <connect gate="G$0" pad="19" pin="AUX1"/>
+                                <connect gate="G$0" pad="20" pin="AUX2"/>
+                                <connect gate="G$0" pad="21" pin="OSCIN"/>
+                                <connect gate="G$0" pad="22" pin="OSCOUT"/>
+                                <connect gate="G$0" pad="23" pin="IRQ"/>
+                                <connect gate="G$0" pad="24" pin="SDA/!SS!/RX"/>
+                                <connect gate="G$0" pad="25" pin="D1/ADR_5"/>
+                                <connect gate="G$0" pad="26" pin="D2/ADR_4"/>
+                                <connect gate="G$0" pad="27" pin="D3/ADR_3"/>
+                                <connect gate="G$0" pad="28" pin="D4/ADR_2"/>
+                                <connect gate="G$0" pad="29" pin="D5/ADR_1/SCK/DTRQ"/>
+                                <connect gate="G$0" pad="30" pin="D6/ADR_0/MOSI/MX"/>
+                                <connect gate="G$0" pad="31" pin="D7/SCL/MISO/TX"/>
+                                <connect gate="G$0" pad="32" pin="EA"/>
+                                <connect gate="G$0" pad="33" pin="EP"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="mouser_description" value="RFID Transponders CONTACTLESS READER IC"/>
+                                    <attribute name="ambient_temperature_range_low" value="-25°C"/>
+                                    <attribute name="mouser_part_number" value="771-MFRC52202HN1151"/>
+                                    <attribute name="mfg_package_ident_rev" value="0"/>
+                                    <attribute name="footprint_parameters_1" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":400000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":500000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"A","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40}}}'/>
+                                    <attribute name="max_junction_temp" value="+100°C"/>
+                                    <attribute name="footprint_parameters_2" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":300000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":250000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"B","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="temperature_range_high" value="+100°C"/>
+                                    <attribute name="ambient_temperature_range_high" value="+85°C"/>
+                                    <attribute name="device_class_L2" value="RF Semiconductors and Devices"/>
+                                    <attribute name="digikey_description" value="IC RFID READER 13.56MHZ 32HVQFN"/>
+                                    <attribute name="device_class_L3" value="Transceivers"/>
+                                    <attribute name="data_rate" value="10Mbits/s"/>
+                                    <attribute name="digikey_part_number" value="568-8603-ND"/>
+                                    <attribute name="max_supply_voltage" value="3.6V"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="verification_version" value="0.0.0.3"/>
+                                    <attribute name="datasheet" value="https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf"/>
+                                    <attribute name="MF" value="NXP"/>
+                                    <attribute name="footprint_url" value="https://www.nxp.com/docs/en/package-information/SOT617-1.pdf"/>
+                                    <attribute name="nominal_supply_current" value="3-60mA"/>
+                                    <attribute name="interface" value="I2C,SPI,UART,RS-232"/>
+                                    <attribute name="automotive" value="No"/>
+                                    <attribute name="lead_free" value="Yes"/>
+                                    <attribute name="height" value="1mm"/>
+                                    <attribute name="mfg_package_ident" value="SOT617-1"/>
+                                    <attribute name="footprint_variant_name_0" value="Recommended_Land_Pattern"/>
+                                    <attribute name="footprint_variant_name_2" value="IPC_B"/>
+                                    <attribute name="footprint_variant_name_3" value="IPC_C"/>
+                                    <attribute name="MPN" value="MFRC52202HN1,151"/>
+                                    <attribute name="max_power_dissipation" value="200mW"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="device_class_L1" value="Integrated Circuits (ICs)"/>
+                                    <attribute name="mfg_package_ident_date" value="02/2016"/>
+                                    <attribute name="standoff_height" value="0mm"/>
+                                    <attribute name="max_frequency" value="13.56MHz"/>
+                                    <attribute name="footprint_parameters_3" value='{"fp_type":"QFN","params":{"N1":{"nom":8,"long name":"Leads on long side","min":null,"max":null,"short name":"N1","type":"count"},"N2":{"nom":8,"long name":"Leads on wide side","min":null,"max":null,"short name":"N2","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1000000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":0,"max":50000,"short name":"A1","type":"measurement"},"A2":{"nom":false,"long name":"Package height","min":false,"max":1000000,"short name":"A2","type":"measurement"},"D":{"nom":false,"long name":"Package length","min":4900000,"max":5100000,"short name":"D","type":"measurement"},"E":{"nom":false,"long name":"Package width","min":4900000,"max":5100000,"short name":"E","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":180000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":200000,"long name":"Lead thickness","min":null,"max":null,"short name":"C","type":"measurement"},"L":{"nom":false,"long name":"Lead foot length","min":300000,"max":500000,"short name":"L","type":"measurement"},"e":{"nom":500000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"D2":{"nom":false,"long name":"Thermal pad length","min":2950000,"max":3250000,"short name":"D2","type":"measurement"},"E2":{"nom":false,"long name":"Thermal pad width","min":2950000,"max":3250000,"short name":"E2","type":"measurement"},"PC":{"long name":"Paste coverage (%)","type":"percentage","short name":"PC","value":40},"HT":{"default":"Yes","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":["D2","E2","PC"]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":200000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":0,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":-40000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":100000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"C","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="footprint_variant_name_1" value="IPC_A"/>
+                                    <attribute name="min_supply_voltage" value="1.6V"/>
+                                    <attribute name="package" value="VQFN32"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>

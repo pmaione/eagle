@@ -1,0 +1,30 @@
+/*
+  this ULP add a attribute to all devices in a library
+  (useful for personnal libs)
+  to be run in a opened library
+  syntax: run add_attrib_lbr attrib_name attrib_type
+  (attrib_type: delete, variable or constant)
+  example: run add_attrib_lbr price variable
+  
+  Author: Maurice SAAB (morisaab@yahoo.fr)
+          02 July 2011
+          v1.0
+*/
+
+string attrib_name=argv[1];
+string attrib_type=argv[2];
+
+string tmp;
+string scr_path=path_scr[0]+"/";
+
+output(scr_path+"toto.scr") {
+  library(L) {
+    L.devices(d) {
+      printf("edit %s.dev\n",d.name);
+      printf("attrib %s %s\n",attrib_name,attrib_type);
+      }
+    }
+
+  printf("write;\n");
+  exit("script toto.scr");
+  }
