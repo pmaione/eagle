@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.6.1">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="48" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="49" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="22" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="0" fill="1" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="0" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="29" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>Upverter Parts Library
+
+Created by Upverter.com</description>
+<packages>
+<package name="CAY16_J4">
+<description>RES-P-8
+&lt;br&gt;
+Centro: X = 0.9 mm</description>
+<wire x1="0.1" y1="0.4" x2="1.7" y2="0.4" width="0.1" layer="51"/>
+<wire x1="0.1" y1="-2.8" x2="1.7" y2="-2.8" width="0.1" layer="51"/>
+<wire x1="0.1" y1="-2.8" x2="0.1" y2="0.4" width="0.1" layer="51"/>
+<wire x1="1.7" y1="-2.8" x2="1.7" y2="0.4" width="0.1" layer="51"/>
+<wire x1="-1.2" y1="-3.2" x2="-1.2" y2="0.8" width="0.1" layer="39"/>
+<wire x1="-1.2" y1="0.8" x2="3" y2="0.8" width="0.1" layer="39"/>
+<wire x1="3" y1="0.8" x2="3" y2="-3.2" width="0.1" layer="39"/>
+<wire x1="3" y1="-3.2" x2="-1.2" y2="-3.2" width="0.1" layer="39"/>
+<text x="0.9" y="1.6" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+<circle x="-1" y="0" radius="0.125" width="0.25" layer="21"/>
+<smd name="4" x="0" y="-2.4" dx="0.425" dy="0.9" layer="1" rot="R90"/>
+<smd name="3" x="0" y="-1.6" dx="0.425" dy="0.9" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-0.8" dx="0.425" dy="0.9" layer="1" rot="R90"/>
+<smd name="1" x="0" y="0" dx="0.425" dy="0.9" layer="1" rot="R90"/>
+<smd name="8" x="1.8" y="0" dx="0.425" dy="0.9" layer="1" rot="R90"/>
+<smd name="7" x="1.8" y="-0.8" dx="0.425" dy="0.9" layer="1" rot="R90"/>
+<smd name="6" x="1.8" y="-1.6" dx="0.425" dy="0.9" layer="1" rot="R90"/>
+<smd name="5" x="1.8" y="-2.4" dx="0.425" dy="0.9" layer="1" rot="R90"/>
+<text x="0.9" y="-4" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="BOURNS_CAY16-103J4LF_0_0">
+<description>RES-P-8</description>
+<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="2.54" width="0.508" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.508" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-10.16" width="0.508" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0.508" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="1.524" y1="0" x2="1.27" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.508" x2="0.762" y2="0.508" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.508" x2="0.254" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="0.254" y1="-0.508" x2="-0.254" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="0.508" x2="-0.762" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.508" x2="-1.27" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0.508" x2="-1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.524" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.54" x2="1.27" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-3.048" x2="0.762" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.032" x2="0.254" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="0.254" y1="-3.048" x2="-0.254" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="-2.032" x2="-0.762" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-3.048" x2="-1.27" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.032" x2="-1.524" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="1.524" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-5.08" x2="1.27" y2="-5.588" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-5.588" x2="0.762" y2="-4.572" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-4.572" x2="0.254" y2="-5.588" width="0.254" layer="94"/>
+<wire x1="0.254" y1="-5.588" x2="-0.254" y2="-4.572" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="-4.572" x2="-0.762" y2="-5.588" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-5.588" x2="-1.27" y2="-4.572" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-4.572" x2="-1.524" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="1.524" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-7.62" x2="1.27" y2="-8.128" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-8.128" x2="0.762" y2="-7.112" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-7.112" x2="0.254" y2="-8.128" width="0.254" layer="94"/>
+<wire x1="0.254" y1="-8.128" x2="-0.254" y2="-7.112" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="-7.112" x2="-0.762" y2="-8.128" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-8.128" x2="-1.27" y2="-7.112" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-7.112" x2="-1.524" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="3.81" size="2.54" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-13.97" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="1" x="-7.62" y="0" visible="pad" length="middle" direction="pas"/>
+<pin name="2" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="3" x="-7.62" y="-5.08" visible="pad" length="middle" direction="pas"/>
+<pin name="4" x="-7.62" y="-7.62" visible="pad" length="middle" direction="pas"/>
+<pin name="5" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="6" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="7" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="8" x="7.62" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BOURNS_CAY16-XXXJ4LF" prefix="R">
+<description>RES-P-8</description>
+<gates>
+<gate name="G$0" symbol="BOURNS_CAY16-103J4LF_0_0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="BOURNS_CAY16-103J4LF_0_0" package="CAY16_J4">
+<connects>
+<connect gate="G$0" pin="1" pad="1"/>
+<connect gate="G$0" pin="2" pad="2"/>
+<connect gate="G$0" pin="3" pad="3"/>
+<connect gate="G$0" pin="4" pad="4"/>
+<connect gate="G$0" pin="5" pad="5"/>
+<connect gate="G$0" pin="6" pad="6"/>
+<connect gate="G$0" pin="7" pad="7"/>
+<connect gate="G$0" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CASE_CODE_IMPERIAL" value="0603"/>
+<attribute name="CASE_CODE_METRIC" value="1608"/>
+<attribute name="CASE_PACKAGE" value="0603"/>
+<attribute name="CIIVA_IDS" value="1150485"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.bourns.com/"/>
+<attribute name="DATASHEET" value="http://www.bourns.com/docs/Product-Datasheets/CATCAY.pdf"/>
+<attribute name="DATASHEET_VERSION" value="Jan-15"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended"/>
+<attribute name="HEIGHT" value="0.022 inch"/>
+<attribute name="IMPORTED" value="yes"/>
+<attribute name="IMPORTED_FROM" value="vault"/>
+<attribute name="IMPORT_TS" value="1521861628"/>
+<attribute name="LENGTH" value="0.063 inch"/>
+<attribute name="MAX_OPERATING_TEMPERATURE" value="155 degC"/>
+<attribute name="MF" value="Bourns"/>
+<attribute name="MIN_OPERATING_TEMPERATURE" value="-55 degC"/>
+<attribute name="MOUNT" value="Surface Mount"/>
+<attribute name="MPN" value="CAY16-103J4LF"/>
+<attribute name="PACKAGE" value="CAY16-J4"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Surface Mount Device, Body 1.6 x 3.2 mm, Pitch 0.8 mm"/>
+<attribute name="PACKAGING" value="Tape and Reel"/>
+<attribute name="PINS" value="2"/>
+<attribute name="POWER_RATING" value="100 mW"/>
+<attribute name="PREFIX" value="R"/>
+<attribute name="RADIATION_HARDENING" value="No"/>
+<attribute name="REACH_SVHC" value="Yes"/>
+<attribute name="RELEASE_DATE" value="1475030209"/>
+<attribute name="RESISTANCE" value="220 Ohm"/>
+<attribute name="RO_HSCOMPLIANT" value="true"/>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VAULT_GUID" value="0BCDA535-894A-4AD7-B7AF-5CEA5AAFC8D7"/>
+<attribute name="VAULT_REVISION" value="7CD788C9-8F01-4676-8150-44A75267086F"/>
+<attribute name="VOLTAGE_RATING" value="75 V"/>
+<attribute name="WEIGHT" value="7.1E-05 oz"/>
+<attribute name="WIDTH" value="0.031 inch"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
