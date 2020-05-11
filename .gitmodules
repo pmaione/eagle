@@ -4,6 +4,3 @@
 [submodule "libraries/adafruit-lib"]
 	path = libraries/adafruit-lib
 	url = https://github.com/adafruit/Adafruit-Eagle-Library.git
-[submodule "libraries/zumbik-lib"]
-	path = libraries/zumbik-lib
-	url = https://github.com/zumbik/Eagle-Libraries.git
