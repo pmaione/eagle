@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="0" number="4" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="0" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="4" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="4" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="MURATA_CMWX1ZZABZ-078_0">
+                    <description>General ISM &lt; 1GHz LoRa™ Transceiver Module 868MHz, 915MHz Surface Mount</description>
+                    <polygon layer="29">
+                        <vertex y="1.7" x="-3.3"/>
+                        <vertex y="1.7" x="-1.7"/>
+                        <vertex y="3.3" x="-1.7"/>
+                        <vertex y="3.3" x="-2.8"/>
+                        <vertex y="2.8" x="-3.3"/>
+                        <vertex y="1.7" x="-3.3"/>
+                        <vertex y="1.7" x="-3.3"/>
+                    </polygon>
+                    <polygon layer="31">
+                        <vertex y="1.7" x="-3.3"/>
+                        <vertex y="1.7" x="-1.7"/>
+                        <vertex y="3.3" x="-1.7"/>
+                        <vertex y="3.3" x="-2.8"/>
+                        <vertex y="2.8" x="-3.3"/>
+                        <vertex y="1.7" x="-3.3"/>
+                        <vertex y="1.7" x="-3.3"/>
+                    </polygon>
+                    <polygon layer="1">
+                        <vertex y="1.7" x="-3.3"/>
+                        <vertex y="1.7" x="-1.7"/>
+                        <vertex y="3.3" x="-1.7"/>
+                        <vertex y="3.3" x="-2.8"/>
+                        <vertex y="2.8" x="-3.3"/>
+                        <vertex y="1.7" x="-3.3"/>
+                        <vertex y="1.7" x="-3.3"/>
+                    </polygon>
+                    <wire layer="51" y2="5.9" width="0.15" x2="-6.35" y1="-5.9" x1="-6.35"/>
+                    <wire layer="51" y2="5.9" width="0.15" x2="6.35" y1="5.9" x1="-6.35"/>
+                    <wire layer="51" y2="-5.9" width="0.15" x2="6.35" y1="5.9" x1="6.35"/>
+                    <wire layer="51" y2="-5.9" width="0.15" x2="-6.35" y1="-5.9" x1="6.35"/>
+                    <wire layer="41" y2="6.0" width="0.1" x2="-6.45" y1="-6.0" x1="-6.45"/>
+                    <wire layer="41" y2="6.0" width="0.1" x2="6.45" y1="6.0" x1="-6.45"/>
+                    <wire layer="41" y2="-6.0" width="0.1" x2="6.45" y1="6.0" x1="6.45"/>
+                    <wire layer="41" y2="-6.0" width="0.1" x2="-6.45" y1="-6.0" x1="6.45"/>
+                    <wire layer="21" y2="5.9" width="0.15" x2="-5.025" y1="5.9" x1="-6.35"/>
+                    <wire layer="21" y2="5.9" width="0.15" x2="6.35" y1="5.9" x1="5.025"/>
+                    <wire layer="21" y2="-5.025" width="0.15" x2="6.35" y1="-5.9" x1="6.35"/>
+                    <wire layer="21" y2="5.9" width="0.15" x2="6.35" y1="5.025" x1="6.35"/>
+                    <wire layer="21" y2="-5.9" width="0.15" x2="-5.025" y1="-5.9" x1="-6.35"/>
+                    <wire layer="21" y2="-5.9" width="0.15" x2="6.35" y1="-5.9" x1="5.025"/>
+                    <wire layer="21" y2="-5.025" width="0.15" x2="-6.35" y1="-5.9" x1="-6.35"/>
+                    <wire layer="21" y2="5.9" width="0.15" x2="-6.35" y1="5.025" x1="-6.35"/>
+                    <text layer="25" align="bottom-left" y="6.2" x="-6.35" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="4.425" x="-6.725" layer="21" radius="0.25" width="0.0"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="0.8" dy="0.5" y="4.4" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="0.8" dy="0.5" y="3.6" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="0" dx="0.8" dy="0.5" y="2.8" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="0" dx="0.8" dy="0.5" y="2.0" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="0" dx="0.8" dy="0.5" y="1.2" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="0" dx="0.8" dy="0.5" y="0.4" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-0.4" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-1.2" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-2.0" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-2.8" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-3.6" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-4.4" x="-5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="25" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-4.4" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="26" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-3.6" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="27" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-2.8" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="28" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-2.0" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="29" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-1.2" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="30" stop="yes" roundness="0" dx="0.8" dy="0.5" y="-0.4" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="31" stop="yes" roundness="0" dx="0.8" dy="0.5" y="0.4" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="32" stop="yes" roundness="0" dx="0.8" dy="0.5" y="1.2" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="33" stop="yes" roundness="0" dx="0.8" dy="0.5" y="2.0" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="34" stop="yes" roundness="0" dx="0.8" dy="0.5" y="2.8" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="35" stop="yes" roundness="0" dx="0.8" dy="0.5" y="3.6" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="36" stop="yes" roundness="0" dx="0.8" dy="0.5" y="4.4" x="5.65" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="-4.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="-3.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="-2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="-2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="-1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="-0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="3.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="0" dx="0.5" dy="0.8" y="-5.2" x="4.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="37" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="4.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="38" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="3.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="39" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="40" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="41" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="42" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="43" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="-0.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="44" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="-1.2" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="45" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="-2.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="46" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="-2.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="47" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="-3.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="48" stop="yes" roundness="0" dx="0.5" dy="0.8" y="5.2" x="-4.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="no" name="49" stop="no" roundness="100" dx="1.4" dy="1.4" y="2.5" x="-2.5" rot="R0" cream="no"/>
+                    <smd layer="1" thermals="yes" name="50" stop="yes" roundness="0" dx="1.6" dy="1.6" y="2.5" x="0.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="51" stop="yes" roundness="0" dx="1.6" dy="1.6" y="2.5" x="2.5" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="52" stop="yes" roundness="0" dx="1.6" dy="1.6" y="0.0" x="-2.5" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="53" stop="yes" roundness="0" dx="1.6" dy="1.6" y="0.0" x="0.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="54" stop="yes" roundness="0" dx="1.6" dy="1.6" y="0.0" x="2.5" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="55" stop="yes" roundness="0" dx="1.6" dy="1.6" y="-2.5" x="-2.5" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="56" stop="yes" roundness="0" dx="1.6" dy="1.6" y="-2.5" x="0.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="57" stop="yes" roundness="0" dx="1.6" dy="1.6" y="-2.5" x="2.5" rot="R0" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="MURATA_CMWX1ZZABZ-078_0_0">
+                    <description>General ISM &lt; 1GHz LoRa™ Transceiver Module 868MHz, 915MHz Surface Mount</description>
+                    <wire layer="94" y2="-5.08" width="0.254" x2="2.54" y1="-50.8" x1="2.54"/>
+                    <wire layer="94" y2="-5.08" width="0.254" x2="45.72" y1="-5.08" x1="2.54"/>
+                    <wire layer="94" y2="-50.8" width="0.254" x2="45.72" y1="-5.08" x1="45.72"/>
+                    <wire layer="94" y2="-50.8" width="0.254" x2="2.54" y1="-50.8" x1="45.72"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="2.54" y1="-7.62" x1="2.54"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="2.54" y1="-10.16" x1="2.54"/>
+                    <wire layer="94" y2="-12.7" width="0.15" x2="2.54" y1="-12.7" x1="2.54"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="2.54" y1="-15.24" x1="2.54"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="2.54" y1="-25.4" x1="2.54"/>
+                    <wire layer="94" y2="-30.48" width="0.15" x2="2.54" y1="-30.48" x1="2.54"/>
+                    <wire layer="94" y2="-35.56" width="0.15" x2="2.54" y1="-35.56" x1="2.54"/>
+                    <wire layer="94" y2="-40.64" width="0.15" x2="2.54" y1="-40.64" x1="2.54"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="2.54" y1="-20.32" x1="2.54"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="45.72" y1="-15.24" x1="45.72"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="45.72" y1="-17.78" x1="45.72"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="45.72" y1="-20.32" x1="45.72"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="45.72" y1="-22.86" x1="45.72"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="45.72" y1="-25.4" x1="45.72"/>
+                    <wire layer="94" y2="-27.94" width="0.15" x2="45.72" y1="-27.94" x1="45.72"/>
+                    <wire layer="94" y2="-30.48" width="0.15" x2="45.72" y1="-30.48" x1="45.72"/>
+                    <wire layer="94" y2="-33.02" width="0.15" x2="45.72" y1="-33.02" x1="45.72"/>
+                    <wire layer="94" y2="-35.56" width="0.15" x2="45.72" y1="-35.56" x1="45.72"/>
+                    <wire layer="94" y2="-38.1" width="0.15" x2="45.72" y1="-38.1" x1="45.72"/>
+                    <wire layer="94" y2="-40.64" width="0.15" x2="45.72" y1="-40.64" x1="45.72"/>
+                    <wire layer="94" y2="-43.18" width="0.15" x2="45.72" y1="-43.18" x1="45.72"/>
+                    <wire layer="94" y2="-45.72" width="0.15" x2="45.72" y1="-45.72" x1="45.72"/>
+                    <wire layer="94" y2="-48.26" width="0.15" x2="45.72" y1="-48.26" x1="45.72"/>
+                    <text layer="95" align="top-left" y="-2.54" x="2.54" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-53.34" x="7.62" rot="R0" size="2.54">CMWX1ZZABZ-078</text>
+                    <pin direction="pwr" name="VDD_MCU" visible="both" length="middle" y="-7.62" x="-2.54"/>
+                    <pin direction="pwr" name="VDD_RF" visible="both" length="middle" y="-10.16" x="-2.54"/>
+                    <pin direction="pwr" name="VDD_TCXO" visible="both" length="middle" y="-12.7" x="-2.54"/>
+                    <pin direction="pwr" name="VDD_USB" visible="both" length="middle" y="-15.24" x="-2.54"/>
+                    <pin direction="io" name="ANT" visible="both" length="middle" y="-25.4" x="-2.54"/>
+                    <pin direction="in" name="BOOT0" visible="both" length="middle" y="-30.48" x="-2.54"/>
+                    <pin direction="io" name="MCU_!RST!" visible="both" length="middle" y="-35.56" x="-2.54"/>
+                    <pin direction="io" name="STSAFE_!RST!" visible="both" length="middle" y="-40.64" x="-2.54"/>
+                    <pin direction="pwr" name="VREF+" visible="both" length="middle" y="-20.32" x="-2.54"/>
+                    <pin direction="pwr" name="1_GND" visible="both" length="middle" y="-15.24" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="2_GND" visible="both" length="middle" y="-17.78" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="3_GND" visible="both" length="middle" y="-20.32" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="4_GND" visible="both" length="middle" y="-22.86" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="5_GND" visible="both" length="middle" y="-25.4" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="6_GND" visible="both" length="middle" y="-27.94" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="7_GND" visible="both" length="middle" y="-30.48" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="8_GND" visible="both" length="middle" y="-33.02" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="9_GND" visible="both" length="middle" y="-35.56" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="10_GND" visible="both" length="middle" y="-38.1" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="11_GND" visible="both" length="middle" y="-40.64" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="12_GND" visible="both" length="middle" y="-43.18" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="13_GND" visible="both" length="middle" y="-45.72" x="50.8" rot="R180"/>
+                    <pin direction="pwr" name="14_GND" visible="both" length="middle" y="-48.26" x="50.8" rot="R180"/>
+                </symbol>
+                <symbol name="MURATA_CMWX1ZZABZ-078_0_1">
+                    <description>General ISM &lt; 1GHz LoRa™ Transceiver Module 868MHz, 915MHz Surface Mount</description>
+                    <wire layer="94" y2="-5.08" width="0.254" x2="2.54" y1="-71.12" x1="2.54"/>
+                    <wire layer="94" y2="-5.08" width="0.254" x2="58.42" y1="-5.08" x1="2.54"/>
+                    <wire layer="94" y2="-71.12" width="0.254" x2="58.42" y1="-5.08" x1="58.42"/>
+                    <wire layer="94" y2="-71.12" width="0.254" x2="2.54" y1="-71.12" x1="58.42"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="2.54" y1="-10.16" x1="2.54"/>
+                    <wire layer="94" y2="-12.7" width="0.15" x2="2.54" y1="-12.7" x1="2.54"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="2.54" y1="-15.24" x1="2.54"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="2.54" y1="-17.78" x1="2.54"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="2.54" y1="-20.32" x1="2.54"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="2.54" y1="-22.86" x1="2.54"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="2.54" y1="-25.4" x1="2.54"/>
+                    <wire layer="94" y2="-27.94" width="0.15" x2="2.54" y1="-27.94" x1="2.54"/>
+                    <wire layer="94" y2="-30.48" width="0.15" x2="2.54" y1="-30.48" x1="2.54"/>
+                    <wire layer="94" y2="-33.02" width="0.15" x2="2.54" y1="-33.02" x1="2.54"/>
+                    <wire layer="94" y2="-35.56" width="0.15" x2="2.54" y1="-35.56" x1="2.54"/>
+                    <wire layer="94" y2="-38.1" width="0.15" x2="2.54" y1="-38.1" x1="2.54"/>
+                    <wire layer="94" y2="-38.1" width="0.15" x2="58.42" y1="-38.1" x1="58.42"/>
+                    <wire layer="94" y2="-40.64" width="0.15" x2="58.42" y1="-40.64" x1="58.42"/>
+                    <wire layer="94" y2="-43.18" width="0.15" x2="58.42" y1="-43.18" x1="58.42"/>
+                    <wire layer="94" y2="-45.72" width="0.15" x2="58.42" y1="-45.72" x1="58.42"/>
+                    <wire layer="94" y2="-48.26" width="0.15" x2="58.42" y1="-48.26" x1="58.42"/>
+                    <wire layer="94" y2="-45.72" width="0.15" x2="2.54" y1="-45.72" x1="2.54"/>
+                    <wire layer="94" y2="-48.26" width="0.15" x2="2.54" y1="-48.26" x1="2.54"/>
+                    <wire layer="94" y2="-50.8" width="0.15" x2="2.54" y1="-50.8" x1="2.54"/>
+                    <wire layer="94" y2="-53.34" width="0.15" x2="2.54" y1="-53.34" x1="2.54"/>
+                    <wire layer="94" y2="-55.88" width="0.15" x2="2.54" y1="-55.88" x1="2.54"/>
+                    <wire layer="94" y2="-58.42" width="0.15" x2="2.54" y1="-58.42" x1="2.54"/>
+                    <wire layer="94" y2="-60.96" width="0.15" x2="2.54" y1="-60.96" x1="2.54"/>
+                    <wire layer="94" y2="-63.5" width="0.15" x2="2.54" y1="-63.5" x1="2.54"/>
+                    <wire layer="94" y2="-66.04" width="0.15" x2="2.54" y1="-66.04" x1="2.54"/>
+                    <wire layer="94" y2="-68.58" width="0.15" x2="2.54" y1="-68.58" x1="2.54"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="58.42" y1="-7.62" x1="58.42"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="58.42" y1="-10.16" x1="58.42"/>
+                    <wire layer="94" y2="-27.94" width="0.15" x2="58.42" y1="-27.94" x1="58.42"/>
+                    <wire layer="94" y2="-30.48" width="0.15" x2="58.42" y1="-30.48" x1="58.42"/>
+                    <wire layer="94" y2="-33.02" width="0.15" x2="58.42" y1="-33.02" x1="58.42"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="58.42" y1="-20.32" x1="58.42"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="58.42" y1="-22.86" x1="58.42"/>
+                    <text layer="95" align="top-left" y="-2.54" x="2.54" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-73.66" x="15.24" rot="R0" size="2.54">CMWX1ZZABZ-078</text>
+                    <pin direction="io" name="PA0/WKUP1" visible="both" length="middle" y="-10.16" x="-2.54"/>
+                    <pin direction="io" name="PA2/ADC2" visible="both" length="middle" y="-12.7" x="-2.54"/>
+                    <pin direction="io" name="PA3/ADC3" visible="both" length="middle" y="-15.24" x="-2.54"/>
+                    <pin direction="io" name="PA4/ADC4/DAC1" visible="both" length="middle" y="-17.78" x="-2.54"/>
+                    <pin direction="io" name="PA5/ADC5/DAC2" visible="both" length="middle" y="-20.32" x="-2.54"/>
+                    <pin direction="io" name="PA8/MCO" visible="both" length="middle" y="-22.86" x="-2.54"/>
+                    <pin direction="io" name="PA9/USART1_TX" visible="both" length="middle" y="-25.4" x="-2.54"/>
+                    <pin direction="io" name="PA10/USART_RX" visible="both" length="middle" y="-27.94" x="-2.54"/>
+                    <pin direction="io" name="PA11/USB_DM" visible="both" length="middle" y="-30.48" x="-2.54"/>
+                    <pin direction="io" name="PA12/USB_DP" visible="both" length="middle" y="-33.02" x="-2.54"/>
+                    <pin direction="io" name="PA13/SWDIO" visible="both" length="middle" y="-35.56" x="-2.54"/>
+                    <pin direction="io" name="PA14/SWCLK" visible="both" length="middle" y="-38.1" x="-2.54"/>
+                    <pin direction="io" name="DBG_SX1276_DIO0" visible="both" length="middle" y="-38.1" x="63.5" rot="R180"/>
+                    <pin direction="io" name="DBG_SX1276_DIO1" visible="both" length="middle" y="-40.64" x="63.5" rot="R180"/>
+                    <pin direction="io" name="DBG_SX1276_DIO2" visible="both" length="middle" y="-43.18" x="63.5" rot="R180"/>
+                    <pin direction="io" name="DBG_SX1276_DIO3" visible="both" length="middle" y="-45.72" x="63.5" rot="R180"/>
+                    <pin direction="io" name="DBG_SX1276_DIO5" visible="both" length="middle" y="-48.26" x="63.5" rot="R180"/>
+                    <pin direction="io" name="PB2/LPTIM1_OUT" visible="both" length="middle" y="-45.72" x="-2.54"/>
+                    <pin direction="io" name="PB5/LPTIM1_IN1" visible="both" length="middle" y="-48.26" x="-2.54"/>
+                    <pin direction="io" name="PB6/LPTIM1_ETR" visible="both" length="middle" y="-50.8" x="-2.54"/>
+                    <pin direction="io" name="PB7/LPTIM1_IN2" visible="both" length="middle" y="-53.34" x="-2.54"/>
+                    <pin direction="io" name="PB8/I2C1_SCL" visible="both" length="middle" y="-55.88" x="-2.54"/>
+                    <pin direction="io" name="PB9/I2C1_SDA" visible="both" length="middle" y="-58.42" x="-2.54"/>
+                    <pin direction="io" name="PB12/SPI2_NSS" visible="both" length="middle" y="-60.96" x="-2.54"/>
+                    <pin direction="io" name="PB13/SPI2_SCK" visible="both" length="middle" y="-63.5" x="-2.54"/>
+                    <pin direction="io" name="PB14/SPI2_MISO" visible="both" length="middle" y="-66.04" x="-2.54"/>
+                    <pin direction="io" name="PB15/SPI2_MOSI" visible="both" length="middle" y="-68.58" x="-2.54"/>
+                    <pin direction="io" name="SX1276_DIO4" visible="both" length="middle" y="-7.62" x="63.5" rot="R180"/>
+                    <pin direction="out" name="TCXO_OUT" visible="both" length="middle" y="-10.16" x="63.5" rot="R180"/>
+                    <pin direction="io" name="DBG_CRF1" visible="both" length="middle" y="-27.94" x="63.5" rot="R180"/>
+                    <pin direction="io" name="DBG_CRF2" visible="both" length="middle" y="-30.48" x="63.5" rot="R180"/>
+                    <pin direction="io" name="DBG_CRF3" visible="both" length="middle" y="-33.02" x="63.5" rot="R180"/>
+                    <pin direction="io" name="PH0-OSC_IN" visible="both" length="middle" y="-20.32" x="63.5" rot="R180"/>
+                    <pin direction="io" name="PH1-OSC_OUT" visible="both" length="middle" y="-22.86" x="63.5" rot="R180"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="MD" name="MURATA_CMWX1ZZABZ-078">
+                    <description>General ISM &lt; 1GHz LoRa™ Transceiver Module 868MHz, 915MHz Surface Mount</description>
+                    <gates>
+                        <gate name="A" symbol="MURATA_CMWX1ZZABZ-078_0_0" x="0"/>
+                        <gate name="B" symbol="MURATA_CMWX1ZZABZ-078_0_1" x="63.18"/>
+                    </gates>
+                    <devices>
+                        <device name="MURATA_CMWX1ZZABZ-078_0_0" package="MURATA_CMWX1ZZABZ-078_0">
+                            <connects>
+                                <connect gate="B" pad="1" pin="PA12/USB_DP"/>
+                                <connect gate="B" pad="2" pin="PA11/USB_DM"/>
+                                <connect gate="A" pad="3" pin="1_GND"/>
+                                <connect gate="A" pad="4" pin="VDD_USB"/>
+                                <connect gate="A" pad="5" pin="VDD_MCU"/>
+                                <connect gate="A" pad="6" pin="VDD_RF"/>
+                                <connect gate="A" pad="7" pin="2_GND"/>
+                                <connect gate="B" pad="8" pin="DBG_SX1276_DIO2"/>
+                                <connect gate="B" pad="9" pin="DBG_SX1276_DIO3"/>
+                                <connect gate="B" pad="10" pin="SX1276_DIO4"/>
+                                <connect gate="B" pad="11" pin="DBG_SX1276_DIO5"/>
+                                <connect gate="B" pad="12" pin="DBG_SX1276_DIO1"/>
+                                <connect gate="B" pad="13" pin="DBG_SX1276_DIO0"/>
+                                <connect gate="B" pad="14" pin="PB15/SPI2_MOSI"/>
+                                <connect gate="B" pad="15" pin="PB14/SPI2_MISO"/>
+                                <connect gate="B" pad="16" pin="PB13/SPI2_SCK"/>
+                                <connect gate="B" pad="17" pin="PB12/SPI2_NSS"/>
+                                <connect gate="B" pad="18" pin="PA10/USART_RX"/>
+                                <connect gate="B" pad="19" pin="PA9/USART1_TX"/>
+                                <connect gate="B" pad="20" pin="PA8/MCO"/>
+                                <connect gate="B" pad="21" pin="PA5/ADC5/DAC2"/>
+                                <connect gate="B" pad="22" pin="PA4/ADC4/DAC1"/>
+                                <connect gate="B" pad="23" pin="PA3/ADC3"/>
+                                <connect gate="B" pad="24" pin="PA2/ADC2"/>
+                                <connect gate="A" pad="25" pin="3_GND"/>
+                                <connect gate="A" pad="26" pin="ANT"/>
+                                <connect gate="A" pad="27" pin="4_GND"/>
+                                <connect gate="B" pad="28" pin="DBG_CRF1"/>
+                                <connect gate="B" pad="29" pin="DBG_CRF3"/>
+                                <connect gate="B" pad="30" pin="DBG_CRF2"/>
+                                <connect gate="A" pad="31" pin="STSAFE_!RST!"/>
+                                <connect gate="A" pad="32" pin="VREF+"/>
+                                <connect gate="B" pad="33" pin="PA0/WKUP1"/>
+                                <connect gate="A" pad="34" pin="MCU_!RST!"/>
+                                <connect gate="B" pad="35" pin="PB8/I2C1_SCL"/>
+                                <connect gate="B" pad="36" pin="PB9/I2C1_SDA"/>
+                                <connect gate="B" pad="37" pin="PB2/LPTIM1_OUT"/>
+                                <connect gate="B" pad="38" pin="PB7/LPTIM1_IN2"/>
+                                <connect gate="B" pad="39" pin="PB6/LPTIM1_ETR"/>
+                                <connect gate="B" pad="40" pin="PB5/LPTIM1_IN1"/>
+                                <connect gate="B" pad="41" pin="PA13/SWDIO"/>
+                                <connect gate="B" pad="42" pin="PA14/SWCLK"/>
+                                <connect gate="A" pad="43" pin="BOOT0"/>
+                                <connect gate="A" pad="44" pin="5_GND"/>
+                                <connect gate="B" pad="45" pin="PH1-OSC_OUT"/>
+                                <connect gate="B" pad="46" pin="PH0-OSC_IN"/>
+                                <connect gate="B" pad="47" pin="TCXO_OUT"/>
+                                <connect gate="A" pad="48" pin="VDD_TCXO"/>
+                                <connect gate="A" pad="49" pin="6_GND"/>
+                                <connect gate="A" pad="50" pin="7_GND"/>
+                                <connect gate="A" pad="51" pin="8_GND"/>
+                                <connect gate="A" pad="52" pin="9_GND"/>
+                                <connect gate="A" pad="53" pin="10_GND"/>
+                                <connect gate="A" pad="54" pin="11_GND"/>
+                                <connect gate="A" pad="55" pin="12_GND"/>
+                                <connect gate="A" pad="56" pin="13_GND"/>
+                                <connect gate="A" pad="57" pin="14_GND"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="mfg_package_ident_rev" value="0"/>
+                                    <attribute name="MPN" value="CMWX1ZZABZ-078"/>
+                                    <attribute name="bandwidth" value="47MHz"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="digikey_part_number" value="490-16143-1-ND"/>
+                                    <attribute name="max_frequency" value="915MHz"/>
+                                    <attribute name="mfg_package_ident_date" value="0"/>
+                                    <attribute name="temperature_range_high" value="+85°C"/>
+                                    <attribute name="device_class_L3" value="Transceivers"/>
+                                    <attribute name="device_class_L2" value="RF Semiconductors and Devices"/>
+                                    <attribute name="device_class_L1" value="Integrated Circuits (ICs)"/>
+                                    <attribute name="transmitting_current" value="36-128mA"/>
+                                    <attribute name="mouser_part_number" value="81-CMWX1ZZABZ-078"/>
+                                    <attribute name="receiving_current" value="21.5-23.6mA"/>
+                                    <attribute name="MF" value="Murata"/>
+                                    <attribute name="max_supply_voltage" value="3.6V"/>
+                                    <attribute name="prefix" value="MD"/>
+                                    <attribute name="datasheet" value="https://d3s5r33r268y59.cloudfront.net/datasheets/9465/2017-04-18-03-35-57/typeABZ_datasheet.pdf"/>
+                                    <attribute name="automotive" value="No"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="temperature_range_low" value="-40°C"/>
+                                    <attribute name="verification_version" value="0.0.0.3"/>
+                                    <attribute name="sensitivity" value="-133dBm"/>
+                                    <attribute name="interface" value="I2C,SPI,UART,USB"/>
+                                    <attribute name="lead_free" value="Yes"/>
+                                    <attribute name="height" value="1.76mm"/>
+                                    <attribute name="mfg_package_ident" value="CMWX1ZZABZ-078"/>
+                                    <attribute name="footprint_variant_name_0" value="Recommended_Land_Pattern"/>
+                                    <attribute name="digikey_description" value="UNK LORA MODULE"/>
+                                    <attribute name="min_supply_voltage" value="1.8V"/>
+                                    <attribute name="package" value="SMD_MODULE_12MM5_11MM6"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>

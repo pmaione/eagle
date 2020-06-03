@@ -1,68 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -71,165 +54,138 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
-<package name="RFM">
-<wire x1="0" y1="16.3175" x2="19.65125" y2="16.3175" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="19.65125" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="1.2975" x2="0" y2="0.7975" width="0.127" layer="21" curve="-180"/>
-<wire x1="0" y1="3.13875" x2="0" y2="2.63875" width="0.127" layer="21" curve="-180"/>
-<wire x1="0" y1="5.13875" x2="0" y2="4.63875" width="0.127" layer="21" curve="-180"/>
-<wire x1="0" y1="7.13875" x2="0" y2="6.63875" width="0.127" layer="21" curve="-180"/>
-<wire x1="0" y1="9.2975" x2="0" y2="8.7975" width="0.127" layer="21" curve="-180"/>
-<wire x1="0" y1="11.2975" x2="0" y2="10.7975" width="0.127" layer="21" curve="-180"/>
-<wire x1="0" y1="13.45625" x2="0" y2="12.95625" width="0.127" layer="21" curve="-180"/>
-<wire x1="0" y1="0" x2="0" y2="0.7975" width="0.127" layer="21"/>
-<wire x1="0" y1="1.2975" x2="0" y2="2.63875" width="0.127" layer="21"/>
-<wire x1="0" y1="3.13875" x2="0" y2="4.63875" width="0.127" layer="21"/>
-<wire x1="0" y1="5.13875" x2="0" y2="6.63875" width="0.127" layer="21"/>
-<wire x1="0" y1="7.13875" x2="0" y2="8.7975" width="0.127" layer="21"/>
-<wire x1="0" y1="9.2975" x2="0" y2="10.7975" width="0.127" layer="21"/>
-<wire x1="0" y1="11.2975" x2="0" y2="12.95625" width="0.127" layer="21"/>
-<wire x1="0" y1="13.45625" x2="0" y2="15.02" width="0.127" layer="21"/>
-<wire x1="0" y1="15.52" x2="0" y2="16.3175" width="0.127" layer="21"/>
-<wire x1="19.65125" y1="0.7975" x2="19.65125" y2="1.2975" width="0.127" layer="21" curve="-180"/>
-<wire x1="19.65125" y1="2.63875" x2="19.65125" y2="3.13875" width="0.127" layer="21" curve="-180"/>
-<wire x1="19.65125" y1="4.63875" x2="19.65125" y2="5.13875" width="0.127" layer="21" curve="-180"/>
-<wire x1="19.65125" y1="6.7975" x2="19.65125" y2="7.2975" width="0.127" layer="21" curve="-180"/>
-<wire x1="19.65125" y1="8.7975" x2="19.65125" y2="9.2975" width="0.127" layer="21" curve="-180"/>
-<wire x1="19.65125" y1="10.7975" x2="19.65125" y2="11.2975" width="0.127" layer="21" curve="-180"/>
-<wire x1="19.65125" y1="12.95625" x2="19.65125" y2="13.45625" width="0.127" layer="21" curve="-180"/>
-<wire x1="19.65125" y1="0" x2="19.65125" y2="0.7975" width="0.127" layer="21"/>
-<wire x1="19.65125" y1="1.2975" x2="19.65125" y2="2.63875" width="0.127" layer="21"/>
-<wire x1="19.65125" y1="3.13875" x2="19.65125" y2="4.63875" width="0.127" layer="21"/>
-<wire x1="19.65125" y1="5.13875" x2="19.65125" y2="6.7975" width="0.127" layer="21"/>
-<wire x1="19.65125" y1="7.2975" x2="19.65125" y2="8.7975" width="0.127" layer="21"/>
-<wire x1="19.65125" y1="9.2975" x2="19.65125" y2="10.7975" width="0.127" layer="21"/>
-<wire x1="19.65125" y1="11.2975" x2="19.65125" y2="12.95625" width="0.127" layer="21"/>
-<wire x1="19.65125" y1="13.45625" x2="19.65125" y2="15.02" width="0.127" layer="21"/>
-<wire x1="19.65125" y1="15.52" x2="19.65125" y2="16.3175" width="0.127" layer="21"/>
-<wire x1="0" y1="15.52" x2="0" y2="15.02" width="0.127" layer="21" curve="-180"/>
-<wire x1="19.65125" y1="15.02" x2="19.65125" y2="15.52" width="0.127" layer="21" curve="-180"/>
-<wire x1="2.54" y1="15.875" x2="2.54" y2="11.1125" width="0.127" layer="21"/>
-<wire x1="2.54" y1="11.1125" x2="15.875" y2="11.1125" width="0.127" layer="21"/>
-<wire x1="15.875" y1="11.1125" x2="15.875" y2="15.875" width="0.127" layer="21"/>
-<wire x1="15.875" y1="15.875" x2="2.54" y2="15.875" width="0.127" layer="21"/>
-<wire x1="3.01625" y1="7.3025" x2="3.01625" y2="3.65125" width="0.127" layer="21"/>
-<wire x1="3.01625" y1="3.65125" x2="6.50875" y2="3.65125" width="0.127" layer="21"/>
-<wire x1="6.50875" y1="3.81" x2="6.50875" y2="7.3025" width="0.127" layer="21"/>
-<wire x1="6.50875" y1="7.3025" x2="3.01625" y2="7.3025" width="0.127" layer="21"/>
-<smd name="RESET" x="0" y="15.27" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="DIO0" x="0" y="13.27" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="DIO2" x="0" y="9.0475" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="DIO3" x="0" y="6.88875" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="DIO4" x="0" y="4.88875" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="DIO5" x="0" y="2.88875" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="VCC" x="0" y="1.0475" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="GNDB" x="19.65125" y="1.0475" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="ANT" x="19.65125" y="2.88875" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="GNDA" x="19.65125" y="4.88875" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="SCK" x="19.65125" y="7.0475" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="MISO" x="19.65125" y="9.0475" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="MOSI" x="19.65125" y="11.0475" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="NSS" x="19.65125" y="13.20625" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="NC" x="19.65125" y="15.33375" dx="2.1844" dy="1.0668" layer="1"/>
-<smd name="DIO1" x="0" y="11.1425" dx="2.1844" dy="1.0668" layer="1"/>
-<text x="3.01625" y="17.30375" size="1.778" layer="25">&gt;NAME</text>
-<text x="2.54" y="-2.69875" size="1.778" layer="27">&gt;VALUE</text>
-<text x="5.44" y="12.96875" size="1.27" layer="21">RFM69HW</text>
+<package name="RFM69W/HW">
+<smd name="P$1" x="-10.03" y="7.035" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$2" x="-10.03" y="5.035" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$3" x="-10.03" y="3.035" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$4" x="-10.03" y="1.035" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$5" x="-10.03" y="-0.965" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$6" x="-10.03" y="-2.965" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$7" x="-10.03" y="-4.965" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$8" x="-10.03" y="-6.965" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$9" x="9.7" y="-6.965" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$10" x="9.7" y="-4.965" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$11" x="9.7" y="-2.965" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$12" x="9.7" y="-0.965" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$13" x="9.7" y="1.035" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$14" x="9.7" y="3.035" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$15" x="9.7" y="5.035" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$16" x="9.7" y="7.035" dx="2.54" dy="1.27" layer="1"/>
+<wire x1="-9.8" y1="-7.9" x2="9.6" y2="-7.9" width="0.1" layer="51"/>
+<wire x1="9.6" y1="-7.9" x2="9.6" y2="8" width="0.1" layer="51"/>
+<wire x1="9.6" y1="8" x2="-9.8" y2="8" width="0.1" layer="51"/>
+<wire x1="-9.8" y1="8" x2="-9.8" y2="-7.9" width="0.1" layer="51"/>
+<circle x="-7.4" y="7.1" radius="0.5" width="0.1" layer="51"/>
+<text x="-5.1" y="-6.2" size="1.27" layer="51" font="vector" ratio="1">RFM69W/HW</text>
+<wire x1="5.8" y1="6.4" x2="4.5" y2="5.1" width="0.1" layer="51" curve="-90"/>
+<wire x1="4.5" y1="5.1" x2="-5.2" y2="5.1" width="0.1" layer="51"/>
+<wire x1="-5.2" y1="5.1" x2="-6.5" y2="6.2" width="0.1" layer="51" curve="-90"/>
+<wire x1="-6.5" y1="6.2" x2="-5.2" y2="7.5" width="0.1" layer="51" curve="-90"/>
+<wire x1="-5.2" y1="7.5" x2="4.5" y2="7.5" width="0.1" layer="51"/>
+<wire x1="4.5" y1="7.5" x2="5.8" y2="6.4" width="0.1" layer="51" curve="-90"/>
+<wire x1="5.8" y1="6.4" x2="5.8" y2="6.3" width="0.1" layer="51"/>
+<text x="-1.5" y="6.1" size="0.6096" layer="51" font="vector" ratio="1">XTAL</text>
+<wire x1="-11.8" y1="-9.4" x2="11.8" y2="-9.4" width="0.1" layer="21"/>
+<wire x1="11.8" y1="-9.4" x2="11.8" y2="9.5" width="0.1" layer="21"/>
+<wire x1="11.8" y1="9.5" x2="-11.8" y2="9.5" width="0.1" layer="21"/>
+<wire x1="-11.8" y1="9.5" x2="-11.8" y2="-9.4" width="0.1" layer="21"/>
+<circle x="-11.1" y="8.3" radius="0.1" width="0.4" layer="21"/>
+<text x="13" y="7.3" size="1.9304" layer="25" font="vector">&gt;Name</text>
+<text x="13.6" y="5.2" size="1.27" layer="27" font="vector" ratio="6">&gt;Value</text>
 </package>
 </packages>
 <symbols>
-<symbol name="RFM69HW">
-<wire x1="-15.24" y1="7.62" x2="-15.24" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-33.02" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-33.02" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="-15.24" y2="7.62" width="0.254" layer="94"/>
-<pin name="RESET" x="-20.32" y="5.08" length="middle"/>
-<pin name="DIO0" x="-20.32" y="0" length="middle"/>
-<pin name="DIO1" x="-20.32" y="-5.08" length="middle"/>
-<pin name="DIO2" x="-20.32" y="-10.16" length="middle"/>
-<pin name="DIO3" x="-20.32" y="-15.24" length="middle"/>
-<pin name="DIO4" x="-20.32" y="-20.32" length="middle"/>
-<pin name="DIO5" x="-20.32" y="-25.4" length="middle"/>
-<pin name="VCC" x="-20.32" y="-30.48" length="middle"/>
-<pin name="GNDB" x="17.78" y="-30.48" length="middle" rot="R180"/>
-<pin name="ANT" x="17.78" y="-25.4" length="middle" rot="R180"/>
-<pin name="GNDA" x="17.78" y="-20.32" length="middle" rot="R180"/>
-<pin name="SCK" x="17.78" y="-15.24" length="middle" rot="R180"/>
-<pin name="MISO" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<pin name="MOSI" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="NSS" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="NC" x="17.78" y="5.08" length="middle" rot="R180"/>
+<symbol name="RFM69W/HW">
+<pin name="RESET" x="-20.32" y="15.24" visible="pin" length="middle"/>
+<pin name="DIO0" x="-20.32" y="10.16" visible="pin" length="middle"/>
+<pin name="DIO1" x="-20.32" y="5.08" visible="pin" length="middle"/>
+<pin name="DIO2" x="-20.32" y="0" visible="pin" length="middle"/>
+<pin name="DIO3" x="-20.32" y="-5.08" visible="pin" length="middle"/>
+<pin name="DIO4" x="-20.32" y="-10.16" visible="pin" length="middle"/>
+<pin name="DIO5" x="-20.32" y="-15.24" visible="pin" length="middle"/>
+<pin name="3.3V" x="-20.32" y="-20.32" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@1" x="20.32" y="-20.32" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="ANA" x="20.32" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="GND@2" x="20.32" y="-10.16" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="SCK" x="20.32" y="-5.08" visible="pin" length="middle" function="clk" rot="R180"/>
+<pin name="MISO" x="20.32" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="MOSI" x="20.32" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="NSS" x="20.32" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="NC" x="20.32" y="15.24" visible="pin" length="middle" direction="nc" rot="R180"/>
+<wire x1="-16.51" y1="25.4" x2="16.51" y2="25.4" width="0.254" layer="94"/>
+<wire x1="16.51" y1="25.4" x2="16.51" y2="16.51" width="0.254" layer="94"/>
+<wire x1="16.51" y1="16.51" x2="16.51" y2="-21.59" width="0.254" layer="94"/>
+<wire x1="16.51" y1="-21.59" x2="16.51" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="16.51" y1="-30.48" x2="-16.51" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-16.51" y1="-30.48" x2="-16.51" y2="-21.59" width="0.254" layer="94"/>
+<wire x1="-16.51" y1="-21.59" x2="-16.51" y2="16.51" width="0.254" layer="94"/>
+<wire x1="-16.51" y1="16.51" x2="-16.51" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-16.51" y1="16.51" x2="16.51" y2="16.51" width="0.127" layer="94" style="shortdash"/>
+<wire x1="-16.51" y1="-21.59" x2="16.51" y2="-21.59" width="0.127" layer="94" style="shortdash"/>
+<text x="0.222" y="19.778" size="1.27" layer="94" align="bottom-center">RFM69W/HW
+ISM Band Radio</text>
+<text x="-0.032" y="-27.842" size="1.27" layer="94" align="bottom-center">VDD - 1.8-3.6V
+Temp -40 +85ºC</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RFM69HW">
+<deviceset name="RFM69W/HW" uservalue="yes">
+<description>&lt;b&gt;HopeRF RFM69W / RFM69HW&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;
+ISM Band Radio Modules&lt;/i&gt;&lt;br&gt;&lt;p&gt;
+The RFM69W/HW are transceiver modules capable of operation over a wide frequency range, including the 315, 433, 868 and 915MHz license-free ISM (Industry Scientific and Medical) frequency bands. All major RF communication parameters are programmable and most of them can be dynamically set. The RFM69W/HW offer the unique advantage of programmable narrow-band and wide- band communication modes The RFM69W/HW are optimized for low power consumption while offering high RF output power and channelized operation. Compliance ETSI and FCC regulations. &lt;/p&gt;
+
+&lt;br&gt;&lt;br&gt;
+&lt;i&gt;&lt;u&gt;Features&lt;/u&gt;&lt;/i&gt;
+&lt;ul&gt;
+&lt;li&gt;+13 dBm (+20 dBm - 100 mW for HW variant) Power Output Capability
+&lt;li&gt;High Sensitivity: down to -120 dBm at 1.2 kbps
+&lt;li&gt;High Selectivity: 16-tap FIR Channel Filter
+&lt;li&gt;Bullet-proof front end: IIP3 = -18 dBm, IIP2 = +35 dBm,80
+&lt;li&gt;dB Blocking Immunity, no Image Frequency response
+&lt;li&gt;Low current: Rx = 16 mA, 100nA register retention
+&lt;li&gt;Programmable Pout: -18 to +13 dBm (+20 dBm for the HW variant) in 1dB steps
+&lt;li&gt;Constant RF performance over voltage range of module
+&lt;li&gt;FSK Bit rates up to 300 kb/s
+&lt;li&gt;Fully integrated synthesizer with a resolution of 61 Hz
+&lt;li&gt;FSK, GFSK, MSK, GMSK and OOK modulations
+&lt;li&gt;Built-in Bit Synchronizer performing Clock Recovery
+&lt;li&gt;Incoming Sync Word Recognition
+&lt;li&gt;115 dB+ Dynamic Range RSSI
+&lt;li&gt;Automatic RF Sense with ultra-fast AFC
+&lt;li&gt;Packet engine with CRC-16, AES-128, 66-byte FIFO
+&lt;li&gt;Built-in temperature sensor
+&lt;li&gt;Module Size:19.7X16mm
+&lt;/ul&gt;&lt;br&gt;
+
+
+Purchase at:&lt;p&gt;
+ &lt;a href = "http://www.anarduino.com/?cid=1"&gt; Anarduino.com &lt;/a&gt;&lt;br&gt;
+ &lt;a href = "http://au.rs-online.com/web/c/computing-peripherals/wireless-components-modules/telemetry-modules/?searchTerm=RFM69W&amp;h=s&amp;sra=oss&amp;redirect-relevancy-data=636F3D3226696E3D4931384E4B6E6F776E41734D504E266C753D656E266D6D3D6D61746368616C6C7061727469616C26706D3D5E5B5C707B4C7D5C707B4E647D2D2C2F255C2E5D2B2426706F3D313326736E3D592673743D4D414E5F504152545F4E554D4245522677633D424F5448267573743D52464D363957267374613D52464D36395726"&gt; RS Components &lt;/a&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="A" symbol="RFM69HW" x="0" y="10.16"/>
+<gate name="G$1" symbol="RFM69W/HW" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="RFM">
+<device name="-" package="RFM69W/HW">
 <connects>
-<connect gate="A" pin="ANT" pad="ANT"/>
-<connect gate="A" pin="DIO0" pad="DIO0"/>
-<connect gate="A" pin="DIO1" pad="DIO1"/>
-<connect gate="A" pin="DIO2" pad="DIO2"/>
-<connect gate="A" pin="DIO3" pad="DIO3"/>
-<connect gate="A" pin="DIO4" pad="DIO4"/>
-<connect gate="A" pin="DIO5" pad="DIO5"/>
-<connect gate="A" pin="GNDA" pad="GNDA"/>
-<connect gate="A" pin="GNDB" pad="GNDB"/>
-<connect gate="A" pin="MISO" pad="MISO"/>
-<connect gate="A" pin="MOSI" pad="MOSI"/>
-<connect gate="A" pin="NC" pad="NC"/>
-<connect gate="A" pin="NSS" pad="NSS"/>
-<connect gate="A" pin="RESET" pad="RESET"/>
-<connect gate="A" pin="SCK" pad="SCK"/>
-<connect gate="A" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="3.3V" pad="P$8"/>
+<connect gate="G$1" pin="ANA" pad="P$10"/>
+<connect gate="G$1" pin="DIO0" pad="P$2"/>
+<connect gate="G$1" pin="DIO1" pad="P$3"/>
+<connect gate="G$1" pin="DIO2" pad="P$4"/>
+<connect gate="G$1" pin="DIO3" pad="P$5"/>
+<connect gate="G$1" pin="DIO4" pad="P$6"/>
+<connect gate="G$1" pin="DIO5" pad="P$7"/>
+<connect gate="G$1" pin="GND@1" pad="P$9"/>
+<connect gate="G$1" pin="GND@2" pad="P$11"/>
+<connect gate="G$1" pin="MISO" pad="P$13"/>
+<connect gate="G$1" pin="MOSI" pad="P$14"/>
+<connect gate="G$1" pin="NC" pad="P$16"/>
+<connect gate="G$1" pin="NSS" pad="P$15"/>
+<connect gate="G$1" pin="RESET" pad="P$1"/>
+<connect gate="G$1" pin="SCK" pad="P$12"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -240,4 +196,10 @@
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
