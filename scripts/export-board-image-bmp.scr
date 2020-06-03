@@ -1,0 +1,2 @@
+# <b>Exporta o layout da placa (Layout)</b> <p>
+RUN exp2image monochrome 300 .bmp 17 18 20 21 22 23 24 25 26
