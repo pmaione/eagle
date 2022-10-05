@@ -1,0 +1,84 @@
+/* Local Variables:  */
+/* mode: c           */
+/* End:              */
+
+#usage "<nobr>Este ULP gera um script para limpar as layers nao utilizadas na <i>Library</i><p>"
+       "run delete-unused-layers <br>"
+       "Apaga apenas as layers no editor de <i>Packages</i></nobr>"
+       "<p>"
+       "<author>Author: Pedro Maione [pedromaione@protonmail.com]</author>"
+
+string s;
+
+int layer_visible[];
+
+string listUsedlayer[];
+string listNotusedlayer[];
+
+int dlgResult;
+
+string aux;
+
+string layerNames[];		/* String array with layer names */
+int    layerVisibility[];	/* 0 = off, 1 = on */
+int    layerUsed[];		/* 0 = unused, 1 = used */
+
+string fileName;
+
+
+/* Funções */
+
+
+
+
+
+// **** main ****
+if (library) {
+  string cmd;
+  int listSelect;
+  
+  library(L) {
+    L.layers(LY) {
+      layerNames[LY.number] = LY.name;
+      layerUsed[LY.number] = LY.used;
+      layerVisibility[LY.number] = LY.visible;
+    };
+    fileName = filedir(L.name) + "teste.txt";
+  };
+  
+  int k = 0;
+  /* printf("Layers: \n\n"); */
+  for(int n = 0; n < 254; n++) {
+    /* printf("%3d %1d %s \n", n, layerUsed[n], layerNames[n]); */
+    if ((n > 51 && n < 90) || (n > 98)){
+      sprintf(listUsedlayer[k], "%3d %s", n, layerNames[n]);
+      k++;
+    }
+  }
+  
+  dlgResult = dlgDialog("Exclui layers nao utilizadas.") {
+    dlgLabel("Nome arquivo: " + fileName);
+    dlgSpacing(20);
+    dlgVBoxLayout{
+      dlgLabel("Layers Utilizadas:");
+      dlgSpacing(10);
+      dlgHBoxLayout{
+	dlgStretch(1);
+	dlgListBox(listUsedlayer, listSelect);
+      }
+    };
+    dlgStretch(1);
+    dlgHBoxLayout{	
+      dlgStretch(1);
+      dlgPushButton("+OK") dlgAccept();
+      dlgStretch(1);
+    };
+  };
+  
+  /* L.packages(P) { */
+  /* } */
+  
+ } else {
+  dlgMessageBox("Execute este <i>ULP</i> de um ambiente <i>Library</i>", "OK");
+  exit(0);
+ }

@@ -21,7 +21,7 @@ Assign F11   'Grid inch 0.05 on; Grid alt inch 0.02;';
 Assign A+F11 'Grid inch 0.05 on; Grid alt inch 0.02;';
 Assign F12   'Grid mm 1 on; Grid alt mm 0.5;';
 Assign A+F12 'Grid mm 1 on; Grid alt mm 0.1;';
-# 
+#
 Assign F3 'Name';
 Assign F4 'Value';
 #
@@ -44,6 +44,7 @@ Assign CS+S 'Smash';
 # Executa o script que define as cores padrao
 # scr default-colors-brd.scr
 
+change xref on
 
 #===========================================================
 #
@@ -79,7 +80,7 @@ Change Diameter 0.04;
 Change Shape round;
 
 # Largura da trilha padrao
-Change Width 0.008; 
+Change Width 0.008;
 
 # Altera os padroes de fonte
 Change Font Vector;
@@ -90,8 +91,8 @@ Change Size 0.04;
 scr default-colors-brd.scr
 
 # Mostra apenas as layers principais
-#display none; 
-#display 1 16 17 18 19 20 21 22 23 24 45 49 50 51; 
+#display none;
+#display 1 16 17 18 19 20 21 22 23 24 45 49 50 51;
 
 #Assing shortcuts
 Assign A+S 'split;';

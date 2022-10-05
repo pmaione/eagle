@@ -1,0 +1,253 @@
+/* -*- mode: c; -*- */
+
+#usage "<h2>Exportar fotolitos</h2>"
+"<p>Exporta as imagens dos fotolitos no formato e resolução selecionados."
+"<p>Fotolitos pre-definidos:"
+"<ul>"
+"  <li>Bottom Layer</li>"
+"  <li>Bottom Solder Mask</li>"
+"  <li>Top Silk</li>"
+"</ul>"
+"<p>Usage: RUN exportar-fotolitos"
+"<author>Autor: Pedro Maione [pedromaione@protonmail.com]</author>"
+
+
+int    ratsnest = 1;		// start Ratsnest befor export image
+int    dpi_resolution = 300;	// DPI
+string filetype[] = { ".bmp", ".png" };
+int    select_type = 0;
+int    Result = 0;		// Resultado do BoxDialog
+int    negative = 1;
+
+int export_bottom = 1;
+int export_soldermask = 1;
+int export_topsilk = 1;
+
+string file_name;			 //
+string full_file_name;			 //
+
+string sec_usedlayer[];
+int    lVisible[];
+int    useLayer[];
+string lNames[] = { " " };
+int Seleclayer;
+
+
+string cmd = "";
+
+string s;
+string help = usage;
+
+string export_bottom_layers = "16 17 18 19 20";  // Layer para o fotolito das trilhas inferiores (bottom layer)
+string export_soldermask_layers = "17 18 19 20 29 30"; // Layer para a mascara de solda inferior (soldermask)
+string export_topsilk_layers = "20 21 25"; // Layer para a legenda de componentes (top silk)
+
+string export_bottom_suffix="_bottom"; //
+string export_soldermask_suffix="_soldermask"; //
+string export_topsilk_suffix="_topsilk"; //
+
+
+
+/*
+  Funções
+*/
+
+void commandPrint(string suffix) {
+  string h;
+  sprintf(h, "EXPORT IMAGE '%s%s%s' MONOCHROME %d;\n", full_file_name, suffix, filetype[select_type], dpi_resolution);
+  cmd += h;
+  return;
+}
+
+void getLayers2Print(string layers_array) {
+    // // *** Layer list to print ***
+  string layer[] ;
+  int n = 0;
+  int ln = strsplit(layer, layers_array, ' ');
+  for (int x = 0; x < ln; x++) {
+    int num = strtod(layer[x]);
+    if (useLayer[num]) {
+      if(board) {
+        if (num < 90 || num > 100) {
+          sprintf(sec_usedlayer[n], "%3s %s", layer[x], lNames[num]);
+          n++;
+        }
+      }
+    }
+  }
+  sec_usedlayer[n] = "";  // clear last+1
+  return;
+}
+
+
+// main
+if (board) {
+  board(B) {
+    full_file_name = filesetext(B.name, "");
+    file_name = filename(B.name);
+    B.layers(L) {
+      lNames[L.number] = L.name;
+      lVisible[L.number] = L.visible;
+      useLayer[L.number] = L.used;
+    }
+  }
+ } else {
+   dlgMessageBox("Execute este ULP em um ambiente BRD:", "OK");
+   exit(-1);
+ }
+
+
+/**********************************************************************/
+Result = dlgDialog("Exportar Fotolitos") {
+
+  dlgStretch(0);
+  dlgHBoxLayout {
+    dlgStretch(0);
+    dlgLabel("Nome do arquivo: ");
+    dlgSpacing(1);
+    dlgLabel(file_name);
+    dlgStretch(0);
+  };
+  dlgStretch(0);
+  dlgSpacing(10);
+
+  dlgLabel("Fotolitos a exportar:");
+  dlgSpacing(5);
+  dlgHBoxLayout {
+    dlgStretch(0);
+    dlgHBoxLayout {
+      //
+      dlgVBoxLayout {
+        dlgCheckBox("&BOTTOM", export_bottom);
+        dlgSpacing(5);
+        dlgLabel("Bottom Layers a exportar:");
+        getLayers2Print(export_bottom_layers);
+        dlgListBox(sec_usedlayer, Seleclayer );
+        dlgSpacing(5);
+        dlgHBoxLayout{
+          dlgLabel("Sufixo:");
+          dlgSpacing(5);
+          dlgStringEdit(export_bottom_suffix);
+          dlgSpacing(100);
+        };
+      };
+      dlgSpacing(10);
+      dlgVBoxLayout {
+        dlgCheckBox("&SOLDERMASK", export_soldermask);
+        dlgSpacing(5);
+        dlgLabel("Bottom Layers a exportar:");
+        getLayers2Print(export_soldermask_layers);
+        dlgListBox(sec_usedlayer, Seleclayer );
+        dlgSpacing(5);
+        dlgHBoxLayout{
+          dlgLabel("Sufixo:");
+          dlgSpacing(5);
+          dlgStringEdit(export_soldermask_suffix);
+          dlgSpacing(100);
+        };
+      };
+      dlgSpacing(10);
+      dlgVBoxLayout {
+        dlgCheckBox("&TOPSILK", export_topsilk);
+        dlgSpacing(5);
+        dlgLabel("Bottom Layers a exportar:");
+        getLayers2Print(export_topsilk_layers);
+        dlgListBox(sec_usedlayer, Seleclayer);
+        dlgSpacing(5);
+        dlgHBoxLayout {
+          dlgLabel("Sufixo:");
+          dlgSpacing(5);
+          dlgStringEdit(export_topsilk_suffix);
+          dlgSpacing(100);
+        };
+      };
+    };
+    dlgStretch(0);
+    dlgVBoxLayout{
+        dlgStretch(1);
+        dlgLabel("Negativo:");
+        dlgSpacing(5);
+        dlgCheckBox("Negativo", negative);
+        dlgSpacing(5);
+        dlgLabel("Tipo de &Imagem");
+        dlgComboBox(filetype,select_type);
+        dlgSpacing(5);
+        dlgLabel("Resolução (&DPI)");
+        dlgIntEdit(dpi_resolution,50,600);
+        dlgSpacing(5);
+        dlgCheckBox("Executar &RATSNEST", ratsnest);
+        dlgStretch(1);
+      };
+    };
+    dlgStretch(1);
+    dlgHBoxLayout{
+      dlgStretch(0);
+      dlgPushButton("+OK"){ dlgAccept(); }
+      dlgStretch(0);
+      dlgPushButton("-Cancel"){ dlgReject(); }
+      dlgStretch(0);
+    };
+  };
+
+if (Result == 0) exit (0);
+
+
+string layer[] ;
+int n = 0;
+int ln = strsplit(layer, export_bottom_layers, ' ');
+
+if(board) {                      // 2008-06-23
+  if (!negative) cmd += "SET PALETTE WHITE; \n";
+  cmd += "SET PAD OFF; \n";
+  cmd += "SET DISPLAY_MODE REAL;\n";
+  //if (ratsnest) cmd += "RATSNEST;\n";
+  cmd += "RATSNEST;\n";
+  cmd += "DISPLAY NONE " + export_bottom_layers + " \n;";
+
+  commandPrint(export_bottom_suffix);
+
+  //
+
+  cmd += "DISPLAY NONE " + export_soldermask_layers + " \n;";
+
+  commandPrint(export_soldermask_suffix);
+
+  cmd += "DISPLAY NONE " + export_topsilk_layers + " \n;";
+
+  commandPrint(export_topsilk_suffix);
+
+  cmd += "SET PALETTE BLACK; \n";
+  cmd += "SET PAD ON; \n";
+
+ }
+  cmd += "DISPLAY ";
+
+if(board) {
+  for(int l = 1; l < 90; l++) {
+    if (useLayer[l]) {
+      if (lVisible[l]) {
+        sprintf(s, " %d", l);
+        cmd += s;
+      }
+      else {
+        sprintf(s, " -%d", l);
+        cmd += s;
+      }
+    }
+  }
+  for(l = 100; l < 256; l++) {
+    if (useLayer[l]) {
+      if (lVisible[l]) {
+        sprintf(s, " %d", l);
+        cmd += s;
+      }
+      else {
+        sprintf(s, " -%d", l);
+        cmd += s;
+      }
+    }
+  }
+  cmd += ";\n";
+ }
+
+exit (cmd);

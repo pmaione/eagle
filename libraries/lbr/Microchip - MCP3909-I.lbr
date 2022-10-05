@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="4" number="39" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="4" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="0" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="0" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="MICROCHIP_MCP3909-I-SS_0">
+                    <description>CON-VFC-MCP3909-24</description>
+                    <wire layer="21" y2="4.25" width="0.15" x2="-2.1" y1="-4.25" x1="-2.1"/>
+                    <wire layer="21" y2="4.25" width="0.15" x2="2.1" y1="-4.25" x1="2.1"/>
+                    <wire layer="21" y2="4.25" width="0.15" x2="2.1" y1="4.25" x1="-2.1"/>
+                    <wire layer="21" y2="-4.25" width="0.15" x2="2.1" y1="-4.25" x1="-2.1"/>
+                    <wire layer="51" y2="4.25" width="0.1" x2="-2.8" y1="-4.25" x1="-2.8"/>
+                    <wire layer="51" y2="4.25" width="0.1" x2="2.8" y1="-4.25" x1="2.8"/>
+                    <wire layer="51" y2="4.25" width="0.1" x2="2.8" y1="4.25" x1="-2.8"/>
+                    <wire layer="51" y2="-4.25" width="0.1" x2="2.8" y1="-4.25" x1="-2.8"/>
+                    <wire layer="39" y2="4.35" width="0.1" x2="-4.4" y1="-4.35" x1="-4.4"/>
+                    <wire layer="39" y2="4.35" width="0.1" x2="4.4" y1="4.35" x1="-4.4"/>
+                    <wire layer="39" y2="-4.35" width="0.1" x2="4.4" y1="4.35" x1="4.4"/>
+                    <wire layer="39" y2="-4.35" width="0.1" x2="-4.4" y1="-4.35" x1="4.4"/>
+                    <text layer="25" align="bottom-left" y="4.475" x="-5.4" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="4.35" x="-3.4" layer="21" radius="0.125" width="0.25"/>
+                    <circle y="3.25" x="-1.1" layer="21" radius="0.3" width="0.6"/>
+                    <circle y="3.35" x="-1.9" layer="51" radius="0.5" width="0.1"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="100" dx="0.45" dy="1.8" y="3.575" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="0.45" dy="1.8" y="2.925" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="0.45" dy="1.8" y="2.275" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="0.45" dy="1.8" y="1.625" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="0.45" dy="1.8" y="0.975" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="0.45" dy="1.8" y="0.325" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-0.325" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-0.975" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-1.625" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-2.275" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-2.925" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-3.575" x="-3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="0.45" dy="1.8" y="3.575" x="3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="0.45" dy="1.8" y="2.925" x="3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="0.45" dy="1.8" y="2.275" x="3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="0.45" dy="1.8" y="1.625" x="3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="0.45" dy="1.8" y="0.975" x="3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="0.45" dy="1.8" y="0.325" x="3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-0.325" x="3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-0.975" x="3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-1.625" x="3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-2.275" x="3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-2.925" x="3.4" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.45" dy="1.8" y="-3.575" x="3.4" rot="R90" cream="yes"/>
+                </package>
+                <package name="MICROCHIP_MCP3909-I-SS_1">
+                    <description>CON-VFC-MCP3909-24</description>
+                    <wire layer="21" y2="4.25" width="0.15" x2="-2.0" y1="-4.25" x1="-2.0"/>
+                    <wire layer="21" y2="4.25" width="0.15" x2="2.0" y1="-4.25" x1="2.0"/>
+                    <wire layer="21" y2="4.25" width="0.15" x2="2.0" y1="4.25" x1="-2.0"/>
+                    <wire layer="21" y2="-4.25" width="0.15" x2="2.0" y1="-4.25" x1="-2.0"/>
+                    <wire layer="51" y2="4.25" width="0.1" x2="-2.8" y1="-4.25" x1="-2.8"/>
+                    <wire layer="51" y2="4.25" width="0.1" x2="2.8" y1="-4.25" x1="2.8"/>
+                    <wire layer="51" y2="4.25" width="0.1" x2="2.8" y1="4.25" x1="-2.8"/>
+                    <wire layer="51" y2="-4.25" width="0.1" x2="2.8" y1="-4.25" x1="-2.8"/>
+                    <wire layer="39" y2="4.5" width="0.1" x2="-4.75" y1="-4.5" x1="-4.75"/>
+                    <wire layer="39" y2="4.5" width="0.1" x2="4.75" y1="4.5" x1="-4.75"/>
+                    <wire layer="39" y2="-4.5" width="0.1" x2="4.75" y1="4.5" x1="4.75"/>
+                    <wire layer="39" y2="-4.5" width="0.1" x2="-4.75" y1="-4.5" x1="4.75"/>
+                    <text layer="25" align="bottom-left" y="4.5" x="-5.75" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="4.35" x="-3.45" layer="21" radius="0.125" width="0.25"/>
+                    <circle y="3.25" x="-1.0" layer="21" radius="0.3" width="0.6"/>
+                    <circle y="3.35" x="-1.9" layer="51" radius="0.5" width="0.1"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="100" dx="0.45" dy="2.1" y="3.575" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="0.45" dy="2.1" y="2.925" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="0.45" dy="2.1" y="2.275" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="0.45" dy="2.1" y="1.625" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="0.45" dy="2.1" y="0.975" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="0.45" dy="2.1" y="0.325" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-0.325" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-0.975" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-1.625" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-2.275" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-2.925" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-3.575" x="-3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="0.45" dy="2.1" y="3.575" x="3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="0.45" dy="2.1" y="2.925" x="3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="0.45" dy="2.1" y="2.275" x="3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="0.45" dy="2.1" y="1.625" x="3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="0.45" dy="2.1" y="0.975" x="3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="0.45" dy="2.1" y="0.325" x="3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-0.325" x="3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-0.975" x="3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-1.625" x="3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-2.275" x="3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-2.925" x="3.45" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.45" dy="2.1" y="-3.575" x="3.45" rot="R90" cream="yes"/>
+                </package>
+                <package name="MICROCHIP_MCP3909-I-SS_2">
+                    <description>CON-VFC-MCP3909-24</description>
+                    <wire layer="21" y2="4.25" width="0.15" x2="-1.9" y1="-4.25" x1="-1.9"/>
+                    <wire layer="21" y2="4.25" width="0.15" x2="1.9" y1="-4.25" x1="1.9"/>
+                    <wire layer="21" y2="4.25" width="0.15" x2="1.9" y1="4.25" x1="-1.9"/>
+                    <wire layer="21" y2="-4.25" width="0.15" x2="1.9" y1="-4.25" x1="-1.9"/>
+                    <wire layer="51" y2="4.25" width="0.1" x2="-2.8" y1="-4.25" x1="-2.8"/>
+                    <wire layer="51" y2="4.25" width="0.1" x2="2.8" y1="-4.25" x1="2.8"/>
+                    <wire layer="51" y2="4.25" width="0.1" x2="2.8" y1="4.25" x1="-2.8"/>
+                    <wire layer="51" y2="-4.25" width="0.1" x2="2.8" y1="-4.25" x1="-2.8"/>
+                    <wire layer="39" y2="4.75" width="0.1" x2="-5.2" y1="-4.75" x1="-5.2"/>
+                    <wire layer="39" y2="4.75" width="0.1" x2="5.2" y1="4.75" x1="-5.2"/>
+                    <wire layer="39" y2="-4.75" width="0.1" x2="5.2" y1="4.75" x1="5.2"/>
+                    <wire layer="39" y2="-4.75" width="0.1" x2="-5.2" y1="-4.75" x1="5.2"/>
+                    <text layer="25" align="bottom-left" y="4.75" x="-6.2" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="4.35" x="-3.5" layer="21" radius="0.125" width="0.25"/>
+                    <circle y="3.25" x="-0.9" layer="21" radius="0.3" width="0.6"/>
+                    <circle y="3.35" x="-1.9" layer="51" radius="0.5" width="0.1"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="100" dx="0.45" dy="2.4" y="3.575" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="0.45" dy="2.4" y="2.925" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="0.45" dy="2.4" y="2.275" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="0.45" dy="2.4" y="1.625" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="0.45" dy="2.4" y="0.975" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="0.45" dy="2.4" y="0.325" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-0.325" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-0.975" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-1.625" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-2.275" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-2.925" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-3.575" x="-3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="24" stop="yes" roundness="100" dx="0.45" dy="2.4" y="3.575" x="3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="23" stop="yes" roundness="100" dx="0.45" dy="2.4" y="2.925" x="3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="22" stop="yes" roundness="100" dx="0.45" dy="2.4" y="2.275" x="3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="21" stop="yes" roundness="100" dx="0.45" dy="2.4" y="1.625" x="3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="0.45" dy="2.4" y="0.975" x="3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="0.45" dy="2.4" y="0.325" x="3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-0.325" x="3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-0.975" x="3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-1.625" x="3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-2.275" x="3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-2.925" x="3.5" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="0.45" dy="2.4" y="-3.575" x="3.5" rot="R90" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="MICROCHIP_MCP3909-I-SS_0_0">
+                    <description>CON-VFC-MCP3909-24</description>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="0.0" y1="-66.04" x1="0.0"/>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="20.32" y1="-5.08" x1="0.0"/>
+                    <wire layer="94" y2="-66.04" width="0.508" x2="20.32" y1="-5.08" x1="20.32"/>
+                    <wire layer="94" y2="-66.04" width="0.508" x2="0.0" y1="-66.04" x1="20.32"/>
+                    <wire layer="94" y2="-63.5" width="0.15" x2="20.32" y1="-63.5" x1="20.32"/>
+                    <wire layer="94" y2="-27.94" width="0.15" x2="20.32" y1="-27.94" x1="20.32"/>
+                    <wire layer="94" y2="-63.5" width="0.15" x2="0.0" y1="-63.5" x1="0.0"/>
+                    <wire layer="94" y2="-35.56" width="0.15" x2="20.32" y1="-35.56" x1="20.32"/>
+                    <wire layer="94" y2="-53.34" width="0.15" x2="20.32" y1="-53.34" x1="20.32"/>
+                    <wire layer="94" y2="-50.8" width="0.15" x2="20.32" y1="-50.8" x1="20.32"/>
+                    <wire layer="94" y2="-58.42" width="0.15" x2="0.0" y1="-58.42" x1="0.0"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="0.0" y1="-15.24" x1="0.0"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="0.0" y1="-17.78" x1="0.0"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="0.0" y1="-7.62" x1="0.0"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="0.0" y1="-10.16" x1="0.0"/>
+                    <wire layer="94" y2="-53.34" width="0.15" x2="0.0" y1="-53.34" x1="0.0"/>
+                    <wire layer="94" y2="-50.8" width="0.15" x2="0.0" y1="-50.8" x1="0.0"/>
+                    <wire layer="94" y2="-58.42" width="0.15" x2="20.32" y1="-58.42" x1="20.32"/>
+                    <wire layer="94" y2="-45.72" width="0.15" x2="0.0" y1="-45.72" x1="0.0"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="0.0" y1="-22.86" x1="0.0"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="0.0" y1="-25.4" x1="0.0"/>
+                    <wire layer="94" y2="-33.02" width="0.15" x2="0.0" y1="-33.02" x1="0.0"/>
+                    <wire layer="94" y2="-35.56" width="0.15" x2="0.0" y1="-35.56" x1="0.0"/>
+                    <wire layer="94" y2="-27.94" width="0.15" x2="0.0" y1="-27.94" x1="0.0"/>
+                    <wire layer="94" y2="-40.64" width="0.15" x2="0.0" y1="-40.64" x1="0.0"/>
+                    <wire layer="94" y2="-12.7" width="0.15" x2="20.32" y1="-12.7" x1="20.32"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="20.32" y1="-22.86" x1="20.32"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="20.32" y1="-25.4" x1="20.32"/>
+                    <text layer="95" align="top-left" y="-2.54" x="0.0" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-71.12" x="0.0" rot="R0" size="2.54">MCP3909-I/SS</text>
+                    <pin direction="pwr" name="DGND" visible="both" length="middle" y="-63.5" x="25.4" rot="R180"/>
+                    <pin direction="out" name="HFOUT" visible="both" length="middle" y="-27.94" x="25.4" rot="R180"/>
+                    <pin direction="pwr" name="DVDD" visible="both" length="middle" y="-63.5" x="-5.08"/>
+                    <pin direction="io" name="REFIN/OUT" visible="both" length="middle" y="-35.56" x="25.4" rot="R180"/>
+                    <pin direction="pas" name="1_NC" visible="both" length="middle" y="-53.34" x="25.4" rot="R180"/>
+                    <pin direction="pas" name="2_NC" visible="both" length="middle" y="-50.8" x="25.4" rot="R180"/>
+                    <pin direction="pwr" name="AVDD" visible="both" length="middle" y="-58.42" x="-5.08"/>
+                    <pin direction="in" name="CH1+" visible="both" length="middle" y="-15.24" x="-5.08"/>
+                    <pin direction="in" name="CH1-" visible="both" length="middle" y="-17.78" x="-5.08"/>
+                    <pin direction="in" name="CH0+" visible="both" length="middle" y="-7.62" x="-5.08"/>
+                    <pin direction="in" name="CH0-" visible="both" length="middle" y="-10.16" x="-5.08"/>
+                    <pin direction="pas" name="CLKOUT" visible="both" length="middle" y="-53.34" x="-5.08"/>
+                    <pin direction="in" name="CLKIN" visible="both" length="middle" y="-50.8" x="-5.08"/>
+                    <pin direction="pwr" name="AGND" visible="both" length="middle" y="-58.42" x="25.4" rot="R180"/>
+                    <pin direction="in" name="!MCLR!" visible="both" length="middle" y="-45.72" x="-5.08"/>
+                    <pin direction="in" name="!CS!" visible="both" length="middle" y="-22.86" x="-5.08"/>
+                    <pin direction="in" name="F1/SDI" visible="both" length="middle" y="-25.4" x="-5.08"/>
+                    <pin direction="in" name="G0" visible="both" length="middle" y="-33.02" x="-5.08"/>
+                    <pin direction="in" name="G1" visible="both" length="middle" y="-35.56" x="-5.08"/>
+                    <pin direction="in" name="F2/SCK" visible="both" length="middle" y="-27.94" x="-5.08"/>
+                    <pin direction="in" name="HPF" visible="both" length="middle" y="-40.64" x="-5.08"/>
+                    <pin direction="out" name="NEG/SDO" visible="both" length="middle" y="-12.7" x="25.4" rot="R180"/>
+                    <pin direction="out" name="FOUT0" visible="both" length="middle" y="-22.86" x="25.4" rot="R180"/>
+                    <pin direction="out" name="FOUT1" visible="both" length="middle" y="-25.4" x="25.4" rot="R180"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="U" name="MICROCHIP_MCP3909-I-SS">
+                    <description>CON-VFC-MCP3909-24</description>
+                    <gates>
+                        <gate name="G$0" symbol="MICROCHIP_MCP3909-I-SS_0_0" x="0"/>
+                    </gates>
+                    <devices>
+                        <device name="MICROCHIP_MCP3909-I-SS_0_0" package="MICROCHIP_MCP3909-I-SS_0">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="DVDD"/>
+                                <connect gate="G$0" pad="10" pin="REFIN/OUT"/>
+                                <connect gate="G$0" pad="11" pin="AGND"/>
+                                <connect gate="G$0" pad="12" pin="F2/SCK"/>
+                                <connect gate="G$0" pad="13" pin="F1/SDI"/>
+                                <connect gate="G$0" pad="14" pin="!CS!"/>
+                                <connect gate="G$0" pad="15" pin="G1"/>
+                                <connect gate="G$0" pad="16" pin="G0"/>
+                                <connect gate="G$0" pad="17" pin="CLKIN"/>
+                                <connect gate="G$0" pad="18" pin="CLKOUT"/>
+                                <connect gate="G$0" pad="19" pin="1_NC"/>
+                                <connect gate="G$0" pad="2" pin="HPF"/>
+                                <connect gate="G$0" pad="20" pin="NEG/SDO"/>
+                                <connect gate="G$0" pad="21" pin="DGND"/>
+                                <connect gate="G$0" pad="22" pin="HFOUT"/>
+                                <connect gate="G$0" pad="23" pin="FOUT1"/>
+                                <connect gate="G$0" pad="24" pin="FOUT0"/>
+                                <connect gate="G$0" pad="3" pin="AVDD"/>
+                                <connect gate="G$0" pad="4" pin="2_NC"/>
+                                <connect gate="G$0" pad="5" pin="CH0+"/>
+                                <connect gate="G$0" pad="6" pin="CH0-"/>
+                                <connect gate="G$0" pad="7" pin="CH1-"/>
+                                <connect gate="G$0" pad="8" pin="CH1+"/>
+                                <connect gate="G$0" pad="9" pin="!MCLR!"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="ciiva_ids" value="979383"/>
+                                    <attribute name="Package_Version" value="revBB, Aug-2009"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="E7361363-D8BC-4B45-BA7B-C11010A9013A"/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.microchip.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="import_ts" value="1521842130"/>
+                                    <attribute name="Datasheet_Version" value="revB, Apr-2009"/>
+                                    <attribute name="release_date" value="1331948539"/>
+                                    <attribute name="datasheet" value="http://ww1.microchip.com/downloads/en/DeviceDoc/22025b.pdf"/>
+                                    <attribute name="Code__JEDEC" value="MO-150-AG"/>
+                                    <attribute name="vault_revision" value="2F09CA1F-F21F-4149-8405-6E46054877D0"/>
+                                    <attribute name="pin_0_0_12_inside_edge" value="clock"/>
+                                    <attribute name="footprint_variant_name_0" value="Level C"/>
+                                    <attribute name="Package_Description" value="24-Lead Plastic Shrink Small Outline (SS) - 5.3mm Body [SSOP]"/>
+                                    <attribute name="MPN" value="MCP3909-I/SS"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
+                                    <attribute name="MF" value="Microchip"/>
+                                    <attribute name="footprint_variant_name_1" value="Level B"/>
+                                    <attribute name="footprint_variant_name_2" value="Level A"/>
+                                    <attribute name="package" value="SSOP-SS24"/>
+                                    <attribute name="Component_Link_3_URL" value="http://www.microchip.com/stellent/groups/techpub_sg/documents/packagingspec/en012702.pdf"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="MICROCHIP_MCP3909-I-SS_0_1" package="MICROCHIP_MCP3909-I-SS_1">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="DVDD"/>
+                                <connect gate="G$0" pad="10" pin="REFIN/OUT"/>
+                                <connect gate="G$0" pad="11" pin="AGND"/>
+                                <connect gate="G$0" pad="12" pin="F2/SCK"/>
+                                <connect gate="G$0" pad="13" pin="F1/SDI"/>
+                                <connect gate="G$0" pad="14" pin="!CS!"/>
+                                <connect gate="G$0" pad="15" pin="G1"/>
+                                <connect gate="G$0" pad="16" pin="G0"/>
+                                <connect gate="G$0" pad="17" pin="CLKIN"/>
+                                <connect gate="G$0" pad="18" pin="CLKOUT"/>
+                                <connect gate="G$0" pad="19" pin="1_NC"/>
+                                <connect gate="G$0" pad="2" pin="HPF"/>
+                                <connect gate="G$0" pad="20" pin="NEG/SDO"/>
+                                <connect gate="G$0" pad="21" pin="DGND"/>
+                                <connect gate="G$0" pad="22" pin="HFOUT"/>
+                                <connect gate="G$0" pad="23" pin="FOUT1"/>
+                                <connect gate="G$0" pad="24" pin="FOUT0"/>
+                                <connect gate="G$0" pad="3" pin="AVDD"/>
+                                <connect gate="G$0" pad="4" pin="2_NC"/>
+                                <connect gate="G$0" pad="5" pin="CH0+"/>
+                                <connect gate="G$0" pad="6" pin="CH0-"/>
+                                <connect gate="G$0" pad="7" pin="CH1-"/>
+                                <connect gate="G$0" pad="8" pin="CH1+"/>
+                                <connect gate="G$0" pad="9" pin="!MCLR!"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="ciiva_ids" value="979383"/>
+                                    <attribute name="Package_Version" value="revBB, Aug-2009"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="E7361363-D8BC-4B45-BA7B-C11010A9013A"/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.microchip.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="import_ts" value="1521842130"/>
+                                    <attribute name="Datasheet_Version" value="revB, Apr-2009"/>
+                                    <attribute name="release_date" value="1331948539"/>
+                                    <attribute name="datasheet" value="http://ww1.microchip.com/downloads/en/DeviceDoc/22025b.pdf"/>
+                                    <attribute name="Code__JEDEC" value="MO-150-AG"/>
+                                    <attribute name="vault_revision" value="2F09CA1F-F21F-4149-8405-6E46054877D0"/>
+                                    <attribute name="pin_0_0_12_inside_edge" value="clock"/>
+                                    <attribute name="footprint_variant_name_0" value="Level C"/>
+                                    <attribute name="Package_Description" value="24-Lead Plastic Shrink Small Outline (SS) - 5.3mm Body [SSOP]"/>
+                                    <attribute name="MPN" value="MCP3909-I/SS"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
+                                    <attribute name="MF" value="Microchip"/>
+                                    <attribute name="footprint_variant_name_1" value="Level B"/>
+                                    <attribute name="footprint_variant_name_2" value="Level A"/>
+                                    <attribute name="package" value="SSOP-SS24"/>
+                                    <attribute name="Component_Link_3_URL" value="http://www.microchip.com/stellent/groups/techpub_sg/documents/packagingspec/en012702.pdf"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="MICROCHIP_MCP3909-I-SS_0_2" package="MICROCHIP_MCP3909-I-SS_2">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="DVDD"/>
+                                <connect gate="G$0" pad="10" pin="REFIN/OUT"/>
+                                <connect gate="G$0" pad="11" pin="AGND"/>
+                                <connect gate="G$0" pad="12" pin="F2/SCK"/>
+                                <connect gate="G$0" pad="13" pin="F1/SDI"/>
+                                <connect gate="G$0" pad="14" pin="!CS!"/>
+                                <connect gate="G$0" pad="15" pin="G1"/>
+                                <connect gate="G$0" pad="16" pin="G0"/>
+                                <connect gate="G$0" pad="17" pin="CLKIN"/>
+                                <connect gate="G$0" pad="18" pin="CLKOUT"/>
+                                <connect gate="G$0" pad="19" pin="1_NC"/>
+                                <connect gate="G$0" pad="2" pin="HPF"/>
+                                <connect gate="G$0" pad="20" pin="NEG/SDO"/>
+                                <connect gate="G$0" pad="21" pin="DGND"/>
+                                <connect gate="G$0" pad="22" pin="HFOUT"/>
+                                <connect gate="G$0" pad="23" pin="FOUT1"/>
+                                <connect gate="G$0" pad="24" pin="FOUT0"/>
+                                <connect gate="G$0" pad="3" pin="AVDD"/>
+                                <connect gate="G$0" pad="4" pin="2_NC"/>
+                                <connect gate="G$0" pad="5" pin="CH0+"/>
+                                <connect gate="G$0" pad="6" pin="CH0-"/>
+                                <connect gate="G$0" pad="7" pin="CH1-"/>
+                                <connect gate="G$0" pad="8" pin="CH1+"/>
+                                <connect gate="G$0" pad="9" pin="!MCLR!"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="ciiva_ids" value="979383"/>
+                                    <attribute name="Package_Version" value="revBB, Aug-2009"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="E7361363-D8BC-4B45-BA7B-C11010A9013A"/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.microchip.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="import_ts" value="1521842130"/>
+                                    <attribute name="Datasheet_Version" value="revB, Apr-2009"/>
+                                    <attribute name="release_date" value="1331948539"/>
+                                    <attribute name="datasheet" value="http://ww1.microchip.com/downloads/en/DeviceDoc/22025b.pdf"/>
+                                    <attribute name="Code__JEDEC" value="MO-150-AG"/>
+                                    <attribute name="vault_revision" value="2F09CA1F-F21F-4149-8405-6E46054877D0"/>
+                                    <attribute name="pin_0_0_12_inside_edge" value="clock"/>
+                                    <attribute name="footprint_variant_name_0" value="Level C"/>
+                                    <attribute name="Package_Description" value="24-Lead Plastic Shrink Small Outline (SS) - 5.3mm Body [SSOP]"/>
+                                    <attribute name="MPN" value="MCP3909-I/SS"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
+                                    <attribute name="MF" value="Microchip"/>
+                                    <attribute name="footprint_variant_name_1" value="Level B"/>
+                                    <attribute name="footprint_variant_name_2" value="Level A"/>
+                                    <attribute name="package" value="SSOP-SS24"/>
+                                    <attribute name="Component_Link_3_URL" value="http://www.microchip.com/stellent/groups/techpub_sg/documents/packagingspec/en012702.pdf"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>

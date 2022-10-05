@@ -1,0 +1,171 @@
+#usage
+"<b>Exporta a imagem do para fabricação pelo método de transferencia termica</b><p>"
+"Usage: RUN exporta-imagem-pci"
+"<p><nobr>"
+"<author>Autor: Pedro Maione [pedromaione@protonmail.com]</author>"
+
+
+int    ratsnest = 1;		// start Ratsnest befor export image
+int    dpi_resolution = 300;	// DPI
+string filetype[] = { ".bmp", ".png" };
+int    select_type = 0;
+int    Result = 0;		// Resultado do BoxDialog
+
+string file_name;			 // 
+string full_file_name;			 // 
+string export_filename_suffix="_bottom"; // 
+
+
+string export_Layers = "16 17 18 20";
+string sec_usedlayer[];		     
+int    lVisible[];		     
+int    useLayer[];		     
+string lNames[] = { " " };	     
+
+
+string cmd = "";
+
+string s;
+string help = usage;
+
+string export_bottom = "16 17 19 20";  // Layer para o fotolito das trilhas inferiores (bottom layer)
+string export_soldermask = "17 19 20"; // Layer para a mascara de solda inferior (soldermask)
+string export_topsilk = "20 21 25"     // Layer para a legenda de componentes (top silk) 
+
+  /*
+    Funções
+  */
+void commandPrint() {
+  string h;
+  sprintf(h, "EXPORT IMAGE '%s%s%s' MONOCHROME %d;\n", full_file_name, export_filename_suffix, filetype[select_type], dpi_resolution);
+  cmd += h;
+  return;
+}
+
+
+// main
+if (board) {
+  board(B) {
+    full_file_name = filesetext(B.name, "");
+    file_name = filename(B.name);
+    B.layers(L) {
+      lNames[L.number] = L.name;
+      lVisible[L.number] = L.visible;
+      useLayer[L.number] = L.used;
+    }
+  }
+ } else {
+   dlgMessageBox("Start this ULP in a BRD:", "OK");
+   exit(-1);
+ }
+
+
+/**********************************************************************/
+Result = dlgDialog("Exportar Imagem") {
+
+  dlgStretch(0);
+  dlgHBoxLayout {
+    dlgStretch(0);
+    dlgLabel("Nome do arquivo: ");
+    dlgSpacing(1);
+    dlgLabel(file_name + export_filename_suffix);
+    dlgStretch(0);
+  };
+  dlgStretch(0);
+  // *** Layer list to print ***
+  int Seleclayer;
+  string layer[] ;
+  int n = 0;
+  int ln = strsplit(layer, export_Layers, ' ');
+  for (int x = 0; x < ln; x++) {
+    int num = strtod(layer[x]);
+    if (useLayer[num]) {
+      if(board) {
+	if (num < 90 || num > 100) {
+	  sprintf(sec_usedlayer[n], "%3s %s", layer[x], lNames[num]);
+	  n++;
+	}
+      }
+    }
+  }
+  sec_usedlayer[n] = "";  // clear last+1
+
+  dlgHBoxLayout {
+    dlgStretch(0);
+    dlgVBoxLayout {
+      dlgStretch(0);
+      dlgLabel("Layers a exportar:");
+      dlgStretch(0);
+      dlgListBox(sec_usedlayer, Seleclayer);
+      dlgStretch(0);
+    }
+    dlgStretch(0);
+    dlgVBoxLayout{
+      dlgStretch(0);
+      dlgLabel("&Image type");
+      dlgComboBox(filetype,select_type);
+      dlgSpacing(5);
+      dlgLabel("dpi_resolution &DPI");
+      dlgIntEdit(dpi_resolution,50,600);
+      dlgSpacing(5);
+      dlgCheckBox("&RATSNEST", ratsnest);
+      dlgStretch(1);
+    };
+  };
+  dlgStretch(1);
+  dlgHBoxLayout{
+    dlgStretch(0);
+    dlgPushButton("+OK"){ dlgAccept(); }
+    dlgStretch(0);
+    dlgPushButton("-Cancel"){ dlgReject(); }
+    dlgStretch(0);
+  };
+};
+
+if (Result == 0) exit (0);
+
+  
+string layer[] ;
+int n = 0;
+int ln = strsplit(layer, export_Layers, ' ');
+if(board) {                      // 2008-06-23
+  cmd += "SET PALETTE WHITE; \n";
+  cmd += "SET PAD OFF; \n";
+  cmd += "SET DISPLAY_MODE REAL;\n";
+  //if (ratsnest) cmd += "RATSNEST;\n";
+  cmd += "RATSNEST;\n";
+  cmd += "DISPLAY NONE " + export_Layers + " \n;";
+  commandPrint();
+  cmd += "SET PALETTE BLACK; \n";
+  cmd += "SET PAD ON; \n";
+ }
+  cmd += "DISPLAY ";
+if(board) {
+  for(int l = 1; l < 90; l++) {
+    if (useLayer[l]) {
+      if (lVisible[l]) {
+        sprintf(s, " %d", l);
+        cmd += s;
+      }
+      else {
+        sprintf(s, " -%d", l);
+        cmd += s;
+      }
+    }
+  }
+  for(l = 100; l < 256; l++) {
+    if (useLayer[l]) {
+      if (lVisible[l]) {
+        sprintf(s, " %d", l);
+        cmd += s;
+      }
+      else {
+        sprintf(s, " -%d", l);
+        cmd += s;
+      }
+    }
+  }
+  cmd += ";\n";
+ }
+
+exit (cmd);

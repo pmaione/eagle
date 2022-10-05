@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -852,6 +852,10 @@ Fonte: 9pt = 2.8mm &lt;p&gt;</description>
 <text x="35.56" y="-6.35" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-left">GND</text>
 <circle x="19.05" y="0" radius="10.16" width="0.127" layer="21"/>
 </package>
+<package name="WIREPAD_4MM">
+<pad name="P$1" x="0" y="0" drill="4" diameter="8"/>
+<text x="0" y="-5.08" size="1.016" layer="25" font="vector" ratio="12" align="center">&gt;name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FIDUCIAL">
@@ -1511,6 +1515,21 @@ to be daisy chained easily.</description>
 <connect gate="G$1" pin="SCL" pad="SCL1"/>
 <connect gate="G$1" pin="SDA" pad="SDA1"/>
 <connect gate="G$1" pin="VCC" pad="VCC1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WIREPAD_4MM">
+<gates>
+<gate name="G$1" symbol="BANANA_CONN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WIREPAD_4MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
